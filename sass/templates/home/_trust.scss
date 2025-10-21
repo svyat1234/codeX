@@ -1,0 +1,32 @@
+trust {
+  margin-top: 150px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+.trust__title {
+  color: #FFF;
+  font-family: "Geist";
+  font-size: 74px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105%;
+  text-transform: uppercase;
+}
+.trust__cards {
+  margin-top: 100px;
+  row-gap: 74px;
+}
+.trust__card {
+  flex-basis: 23%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.trust__card-img {
+  max-height: 85px;
+  height: 100%;
+  width: auto;
+}

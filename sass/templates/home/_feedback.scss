@@ -1,0 +1,141 @@
+.feedback {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: linear-gradient(180deg, #131313 0%, #090B12 100%);
+      // &::after
+      //     position: absolute
+      //     content: ''
+      //     top: -850px
+      //     right: 0
+      //     width: 100%
+      //     height: 1700px
+      //     background: url("../img/feedback-bg.png") no-repeat right top
+      //     z-index: 0
+    &__title {
+      position: relative;
+      z-index: 1;
+      color: #FFF;
+      font-family: Geist;
+      font-size: 73.438px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+    }
+    &__form {
+      position: relative;
+      z-index: 1;
+      margin-top: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      row-gap: 60px;
+    }
+    &__input {
+      outline: none;
+      height: 64px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+      color: #fff;
+      font-family: Geist, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.75);
+        font-family: "Geist", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+      }
+      &_small {
+        max-width: 49%;
+        width: 100%;
+      }
+      &_big {
+        max-width: 70%;
+        width: 100%;
+        overflow: hidden;
+        resize: none;
+        padding-top: 24px;
+      }
+      &-file {
+        width: 28%;
+        height: 66px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #FFF;
+        cursor: pointer;
+        &-text {
+          font-family: Inter;
+          font-size: 14.75px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 64px;
+          padding-left: 30px;
+          background: url("../img/feedback-file.svg") no-repeat left top 50%;
+        }
+      }
+    }
+    &__policy-button-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    &__policy {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &-checkbox {
+        cursor: pointer;
+      }
+      &-text {
+        padding-left: 16px;
+        color: rgba(255, 255, 255, 0.50);
+        font-family: Geist, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+  
+        &:hover {
+          color: #14CF93;
+        }
+        &:hover > .feedback__policy-text-link {
+          color: #14CF93;
+          border-bottom: 1px solid #14CF93;
+        }
+        &-link {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.50);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+          transition: all 0.1s ease-in-out;
+        }
+      }
+    }
+    &__button {
+      width: 28%;
+      height: 66px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background: #14CF93;
+      color: #FFF;
+      text-align: center;
+      font-family: Inter;
+      font-size: 16.734px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 64px;
+      border: none;
+      cursor: pointer;
+    }
+  }

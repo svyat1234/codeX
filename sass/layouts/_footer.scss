@@ -1,0 +1,208 @@
+.footer {
+    background: url("../img/shum.png") repeat center / auto, url("../img/footer-bg.png") no-repeat right 33px bottom 46px;
+    padding-bottom: 60px;
+    &__heading {
+      padding-top: 60px;
+      border-top: 1px solid #525662;
+    }
+    &__logos {
+      max-width: 290px;
+      width: 100%;
+    }
+    &__logo {
+      &-link {
+        display: inline-block;
+        margin-right: 21px;
+        margin-bottom: 5px;
+      }
+    }
+
+// 1240px: уменьшить колонный зазор
+@include media('desktop-1240') {
+  .footer { &__nav { &-links { column-gap: 40px; } } }
+}
+
+// 1024px: уже есть базовые медиастили в base/_media.scss — дополним деталями
+@include media('tablet-landscape') {
+  .footer {
+    &__nav { &-links { max-height: 500px; } }
+    &__info { &-text { font-size: 15px; } }
+  }
+}
+
+// 768px: компактнее ссылки
+@include media('mobile-landscape') {
+  .footer {
+    &__nav {
+      &-links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        column-gap: 0;
+        max-height: none;
+      }
+      &-link {
+        margin-bottom: 20px;
+        max-width: 100%;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+      }
+    }
+  }
+}
+
+// 586px: уменьшить паддинги
+@include media('mobile-wide-586') {
+  .footer {
+    &__heading { padding-top: 40px; }
+    &__nav {
+      margin-top: 40px;
+      padding-top: 40px;
+      &-links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        column-gap: 0;
+      }
+      &-link {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+// 425px: уплотнение
+@include media('mobile-425') {
+  .footer { 
+    &__info { padding-top: 40px; }
+    &__nav {
+      &-links { row-gap: 8px; }
+      &-link { margin-bottom: 15px; }
+    }
+  }
+}
+    &__location {
+      color: $light;
+      &-title {
+        font-size: 18px;
+        font-style: normal;
+        line-height: 27px;
+      }
+      &-text {
+        display: inline-block;
+        margin-top: 16px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+      }
+    }
+    &__contacts {
+      &-links {
+        margin-top: 30px;
+      }
+      &-link {
+        display: inline-block;
+        text-decoration: none;
+        color: $light;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+      }
+      &-link:not(:last-child) {
+        margin-bottom: 9px;
+      }
+    }
+    &__socials {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-link {
+        width: 48.0px;
+        height: 48.0px;
+        border-radius: 50%;
+        border: 1px solid $light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.1s ease-in-out;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      &-img {
+        object-fit: none;
+      }
+    }
+    &__nav {
+      margin-top: 60px;
+      padding-top: 60px;
+      border-top: 1px solid $light;
+      &-links {
+        margin-top: 30px;
+        max-height: 550px;
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        column-gap: 50px;
+      }
+      &-title {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+      }
+      &-link {
+        text-decoration: none;
+        margin-bottom: 25px;
+        max-width: 260px;
+        width: 100%;
+        color: rgba(#F5F5F5, 0.75);
+        font-size: 18px;
+        font-style: normal;
+        line-height: 150%;
+        transition: color 0.1s ease-in-out;
+        width: fit-content;
+        &:hover {
+          color: #14CF93;
+        }
+      }
+    }
+    &__info {
+      padding-top: 60px;
+      border-top: 1px solid #525662;
+      &-company {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+      }
+      &-text {
+        font-family: Geist;
+        font-size: 16.313px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19.8px;
+      }
+      &-link {
+        text-decoration: none;
+        color: #fff;
+      }
+      &-social {
+        width: 48px;
+        height: 48px;
+        background: #4076FF url('../img/telegram.svg') no-repeat center;
+        border-radius: 50%;
+        transition: opacity 0.1s ease-in-out;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }

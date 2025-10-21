@@ -1,0 +1,58 @@
+.company-promo {
+    @include flex-center-center;
+    position: relative;
+    margin-top: 20px;
+    min-height: 548px;
+    /* База: половина экрана, но не ниже минимума */
+    height: 50vh;
+    border-radius: $border-radius;
+    overflow: hidden;
+    background: $dark;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+
+        &-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 1;
+        }
+ 
+    }
+}
+
+// Высотная адаптация первого экрана под разные мониторы
+// FullHD: занимать почти весь экран
+@media screen and (min-height: 900px) and (min-width: 1280px) {
+    .company-promo { height: 90vh; }
+}
+
+// 2K: сохраняем пропорции, не делаем контент крошечным
+@media screen and (min-height: 1200px) and (min-width: 1920px) {
+    .company-promo { height: 85vh; }
+}
+
+// 4K: ограничиваем высоту, чтобы не было пустот и крошечного контента
+@media screen and (min-height: 1800px) and (min-width: 2560px) {
+    .company-promo { height: 80vh; }
+}
+
+// Мобильные: делаем выше, чтобы видеофоном смотрелось цельно
+@include media('mobile-landscape') {
+    .company-promo { height: 60vh; }
+}
+
+@include media('mobile-wide-586') {
+    .company-promo { height: 55vh; }
+}
+
+@include media('mobile-425') {
+    .company-promo { height: 50vh; }
+}

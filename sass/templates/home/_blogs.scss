@@ -1,0 +1,101 @@
+.blogs {
+
+    &__heading {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__title-wrap {
+        @include column;
+        position: relative;
+        z-index: 20;
+    }
+
+    &__title {
+        max-width: 613px;
+    }
+
+    &__swiper {
+        margin-top: -125px;
+
+        & .swiper-pagination {
+            margin-top: 60px;
+        }
+    }
+    
+    .swiper { overflow: visible; }
+    @include media('tablet-landscape') { .swiper { overflow: hidden; } }
+    @include media('mobile-landscape') { .swiper { overflow: hidden; } }
+    @include media('mobile-wide-586') { .swiper { overflow: hidden; } }
+
+    .swiper-wrapper {
+        align-items: flex-end;
+        height: 735px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        height: 520px;
+        transition: all 0.4s ease-out;
+    }
+
+    .swiper-slide-active {
+        height: 735px;
+        width: 820px !important;
+
+        .cases__card-text{
+            height: 55px;
+            max-height: 15em;
+            margin-top: 28px;
+            opacity: 1;
+        }
+    }
+
+    .cases__card-text{
+        height: 0;
+        margin: 0;
+        opacity: 0;
+        transition: all 0.4s ease-out;
+    }
+
+
+}
+
+// 1240px: уменьшить отрицательный отступ
+@include media('desktop-1240') {
+    .blogs { 
+        &__swiper { margin-top: -80px; }
+        .swiper { overflow: hidden; }
+        .swiper-slide-active { width: 100% !important; }
+    }
+}
+
+// 1024px: ещё меньше
+@include media('tablet-landscape') {
+    .blogs { 
+        &__swiper { margin-top: -60px; }
+        .swiper { overflow: hidden; }
+        .swiper-slide-active { width: 100% !important; }
+    }
+}
+
+// 768px: под мобильную высоту
+@include media('mobile-landscape') {
+    .blogs {
+        .swiper-wrapper { height: 600px; }
+        .swiper-slide { height: 420px; }
+        .swiper-slide-active { height: 600px; width: 100% !important; }
+        .swiper { overflow: hidden; }
+    }
+}
+
+// 586px: компакт
+@include media('mobile-wide-586') {
+    .blogs {
+        .swiper-wrapper { height: 520px; }
+        .swiper-slide { height: 380px; }
+        .swiper-slide-active { height: 520px; width: 100% !important; }
+        .swiper { overflow: hidden; }
+    }
+}

@@ -1,0 +1,362 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__content {
+        @include flex-center-between;
+        gap: 20px;
+    }
+
+    &__about {
+        gap: 20px;
+        min-height: 670px;
+        max-width: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: stretch;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info {
+        margin-top: 50px;
+        display: flex;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    &__info-text {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    &__cards {
+        @include flex-end-between;
+        gap: 20px;
+    }
+
+    &__card {
+        position: relative;
+        padding: 26px 26px 40px 26px;
+        background: $dark;
+        border-radius: $border-radius;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        height: 270px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: height 0.2s ease-in-out;
+
+        $icons: 'corporate-advantage-1', 'corporate-advantage-2', 'corporate-advantage-3';
+
+        @for $i from 1 through length($icons) {
+            &:nth-child(#{$i}) .team__card-icon {
+                background: url('../../../img/#{nth($icons, $i)}.png') no-repeat center / cover;
+            }
+        }
+
+        &:hover {
+            height: 364px;
+
+            .team__card-content {
+                opacity: 1;
+            }
+
+            .team__card-icon {
+                width: 63px;
+                height: 63px;
+                left: 20px;
+                top: 20px;
+                transform: translate(0, 0);
+            }
+        }
+    }
+
+    &__card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    &__card-icon {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__card-title { 
+        font-size: 30px;
+        line-height: 110%;
+        font-weight: 600;
+    }
+
+    &__card-text {
+        font-size: 18px;
+        color: #757575;
+        line-height: 120%;
+    }
+
+    &__people {
+        @include column;
+        flex-direction: row;
+        gap: 25px;
+        position: relative;
+        padding: 35px;
+        align-self: stretch;
+        background: $dark;
+        border-radius: $border-radius;
+        align-self: stretch
+    }
+
+    &__people-images {
+        max-width: 224px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__people-image {
+        width: 112px;
+        height: 112px;
+        border-radius: 50%;
+        opacity: 0.3;
+        cursor: pointer;
+        
+        &:nth-child(1) {
+            background: url('../../../img/image14.png') no-repeat center / cover;
+        } 
+        &:nth-child(2) {
+            background: url('../../../img/Nzswxew8Egg2.png') no-repeat center / cover;
+        }
+        &:nth-child(3) {
+            background: #181818;
+            opacity: 1;
+        }  
+        &:nth-child(4) {
+            background: url('../../../img/image15.png') no-repeat center / cover;
+        }
+
+        &--active {
+            opacity: 1;
+        }
+    }
+
+    &__people-heading {
+        display: flex;
+        align-items: flex-start;
+        gap: 55px;
+    }
+
+    &__people-name {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 120%;
+        max-width: 198px;
+    }
+
+    &__people-position {
+        font-size: 18px;
+        line-height: 120%;
+        color: #757575;
+        max-width: 200px;
+        width: 100%;
+    }
+
+    &__people-texts {
+        margin-top: 55px;
+        display: flex;
+        flex-direction: column;
+        gap: 43px;
+        max-width: 506px;
+    }
+
+    &__link {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    &__statistics {
+        margin-top: 150px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    &__statistics-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 415px;
+        border-radius: $border-radius;
+        border: 1px solid rgba($light, 0.08);
+        padding: 30px;
+        transition: background 0.2s ease-in-out;
+
+        &:hover {
+            background: $accent;
+
+            & .team__statistics-sub {
+                color: $light;
+            }
+        }
+
+        &:nth-child(1) {
+            & .team__statistics-sub {
+                margin-top: 20px;
+                font-family: RobotoFlex, sans-serif;
+                font-size: 22px;
+                font-weight: normal;
+            }
+        }
+        &:nth-child(4) {
+            & .team__statistics-sub {
+                margin: 15px;
+                font-size: 62px;
+                font-weight: 900;
+            }
+        }
+    }
+
+    &__statistics-heading {
+        font-family: Geist, sans-serif;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    &__statistics-title {
+        font-size: 148px;
+        line-height: 100%;
+        font-weight: 800;
+    }
+
+    &__statistics-sub {
+        font-weight: 500;
+        line-height: 100%;
+        color: $accent;
+        font-weight: 500;
+        font-size: 93px;
+        transition: color 0.2s ease-in-out;
+    }
+
+    &__statistics-text {
+        font-size: 22px;
+        line-height: 120%;
+        font-weight: 400;
+        color: #757575;
+        max-width: 210px;
+        color: $light;
+    }
+
+
+    // MEDIA
+
+    @include media('desktop-large') {
+
+        &__card-content {
+            gap: 15px;
+        }
+
+        &__card-title {
+            font-size: 25px;
+        }
+
+        &__card-text {
+            font-size: 15px;
+        }
+    }
+
+    @include media('desktop') {
+        &__people-image {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+        }
+    }
+
+    // Масштабирование крупных чисел статистики
+    @include media('desktop-1240') {
+        &__statistics-title { font-size: 120px; }
+        &__statistics-sub { font-size: 80px; }
+    }
+
+    @include media('tablet-landscape') {
+        &__statistics-title { font-size: 96px; }
+        &__statistics-sub { font-size: 64px; }
+    }
+
+    @include media('mobile-landscape') {
+        &__statistics-title { font-size: 72px; }
+        &__statistics-sub { font-size: 48px; }
+    }
+
+    @include media('mobile-wide-586') {
+        &__statistics-title { font-size: 60px; }
+        &__statistics-sub { font-size: 40px; }
+    }
+
+    @include media('mobile-425') {
+        &__statistics-title { font-size: 52px; }
+        &__statistics-sub { font-size: 34px; }
+    }
+
+    @include media('mobile-320') {
+        &__statistics-title { font-size: 46px; }
+        &__statistics-sub { font-size: 30px; }
+    }
+
+    // 1240px: уплотняем отступы
+    @include media('desktop-1240') {
+        &__info { gap: 40px; }
+        &__people { padding: 28px; }
+    }
+
+    // 1024px: стек в колонку
+    @include media('tablet-landscape') {
+        &__content { flex-direction: column; align-items: stretch; }
+        &__about { max-width: 100%; min-height: auto; }
+        &__people { max-width: 100%; }
+        &__statistics { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    // 768px: карточки ниже, меньше высоты
+    @include media('mobile-landscape') {
+        &__card { height: 240px; }
+        &__card:hover { height: 240px; }
+        &__people-heading { gap: 24px; }
+        &__people-texts { margin-top: 30px; }
+    }
+
+    // 586px: одна колонка статистики и компактные паддинги
+    @include media('mobile-wide-586') {
+        &__people { padding: 20px; gap: 16px; }
+        &__statistics { grid-template-columns: 1fr; }
+    }
+
+    // 425px: ещё плотнее
+    @include media('mobile-425') {
+        &__people-name { font-size: 26px; }
+        &__people-position { font-size: 16px; }
+    }
+
+    // 320px: минимальные отступы
+    @include media('mobile-320') {
+        &__people { padding: 16px; }
+    }
+}

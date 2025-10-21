@@ -1,0 +1,169 @@
+.corporate-stages {
+
+    &__content {
+        @include flex-start-between;
+        margin-top: 74px;
+        gap: 20px;
+    }
+    
+    &__tabs-buttons {
+        position: relative;
+        display: flex;
+        flex-direction: column  ;
+        row-gap: 20px;
+        list-style: none;
+        max-width: 555px;
+        width: 100%;
+        padding: 50px;
+        border-radius: $border-radius;
+        border: 3px solid rgba(255, 255, 255, 0.03);
+        height: 766px;
+    }
+
+    &__tabs-button {
+        font-family: "Roboto Flex", sans-serif;
+        font-size: 25px;
+        letter-spacing: 0.48px;
+        color: $light;
+        opacity: 5%;
+
+        &_active {
+            opacity: 1;
+        }
+    }
+
+    &__tabs-num {
+        position: absolute;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #FFF;
+        font-family: GeistExtraBold, sans-serif;
+        color: #0D0D0D;
+        font-size: 76px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 110%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        opacity: 0.05;
+        bottom: 25px;
+    }
+
+    &__tab {
+        @include flex-start-between;
+        max-width: 1140px;
+        width: 100%;
+        height: 766px;
+        border-radius: $border-radius;
+        border: 3px solid rgba(255, 255, 255, 0.03);
+        height: 766px;
+        padding: 50px 25px;
+
+        &-icon {
+            width: 45px;
+            height: 45px;
+            background: url("../img/star.svg") no-repeat center / cover;
+        }
+
+        &-content {
+            max-width: 835px;
+            width: 100%;
+        }
+
+        &-heading {
+            @include flex-start-between
+        }
+
+        &-title {
+            max-width: 363px;    
+        }
+
+        &-info {
+            max-width: 419px;
+        }
+
+        &-cards-title {
+            display: flex;
+            margin-top: 50px;
+            font-family: "Roboto Flex";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 110%;
+            letter-spacing: 0.48px;
+        }
+
+        &-cards {
+            margin-top: 30px;
+            max-width: 679px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 25px;
+            row-gap: 10px;
+        }
+
+        &-card {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: $dark;
+            border-radius: $border-radius;
+
+            &-num {
+                border: 3px solid $accent;
+                border-radius: $border-radius;
+                min-width: 50px;
+                height: 40px;
+                font-family: "Roboto Flex";
+                font-size: 22px;
+                font-weight: 700;
+                color: $accent;
+                line-height: 110%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: -28px;
+                margin-right: 40px;
+                color: #14CF93;
+            }
+
+            &-text {
+                font-family: "Roboto Flex";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 21px;
+                letter-spacing: 0.48px;
+            }
+        }
+
+        &-annotation {
+            margin-top: 50px;
+            font-family: "Roboto Flex";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.48px;
+            opacity: 0.4;
+            max-width: 687px;
+        }
+    }
+}
+
+// 1024px: табы над контентом
+@include media('tablet-landscape') {
+    .corporate-stages {
+        &__content { flex-direction: column; }
+        &__tab { height: auto; }
+    }
+}
+
+// 768px: колонки внутри таба в один столбец
+@include media('mobile-landscape') {
+    .corporate-stages {
+        &__tab {
+            &-heading { flex-direction: column; gap: 16px; }
+            &-cards { grid-template-columns: 1fr; }
+        }
+    }
+}

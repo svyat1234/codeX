@@ -1,0 +1,41 @@
+.error-page {
+    height: 100vh;
+    @include flex-center-center;
+    text-align: center;
+
+    &__logo {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__content {
+        @include flex-center-center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__title {
+        font-family: Geist, sans-serif;
+        font-size: 45vh;
+        line-height: 80%;
+        font-weight: 700;
+    }
+
+    &__text {
+        margin-top: 20px;
+        font-family: Geist, sans-serif;
+        font-size: 6vh;
+        line-height: 100%;
+        font-weight: 400;
+        color: #757575;
+        color: $light;
+        max-width: 40vw;
+    }
+    
+
+    &__link {
+        margin-top: 50px;
+    }
+}

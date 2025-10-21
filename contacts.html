@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разработка корпоративного сайта</title>
+    <link rel="icon" href="./img/logo.svg.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <main id="main">
+        
+        <!-- HEADER -->
+        <header class="header container">
+            <a href="/" class="header__logo"><img src="./img/logo.svg.svg" alt="code-x" class="header__logo-img"></a>
+
+            <nav class="header__nav">
+                <a href="./services.html" class="link header__nav-link">Что мы делаем</a>
+                <a href="./company.html" class="link header__nav-link">Компания</a>
+                <a href="./services.html" class="link header__nav-link">Кейсы</a>
+                <a href="./contacts.html" class="link header__nav-link">Контакты</a>
+            </nav>
+
+            <div class="header__contacts">
+                <a href="mailto:zakaz@code-x.website" class="link header__contacts-link">zakaz@code-x.website</a>
+                <a href="tel:74954571825" class="link header__contacts-link">+7.495.457.18.25</a>
+            </div>
+            <!-- /.header__contacts -->
+            
+            <div class="header__socials">
+                <a href="./404.html" class="header__socials-link"><img src="./img/telegram.svg" alt="telegram" class="header__socials-link-img"></a>
+                <a href="./404.html" class="header__socials-link"><img src="./img/whatsapp.svg" alt="whatsapp" class="header__socials-link-img"></a>
+            </div>
+            <!-- /.header__socials -->
+
+            <button class="header__burger"></button>
+        </header>
+        <!-- /.header -->
+
+        <!-- CONTACTS -->
+
+        <section class="contacts container">
+
+            <div class="contacts__title-wrap">
+                <h2 class="contacts__title section-title section-title--star">Контакты</h2>
+            </div>
+            <!-- /.contacts__title-wrap -->
+
+            <div class="contacts__wrapper">
+                <div class="contacts__map">
+                    <div style="position:relative;overflow:hidden;border-radius:9px;background:#1e1e1e;height: 100%;">
+                        <a href="https://yandex.ru/maps/20571/zhukovskiy/?utm_medium=mapframe&utm_source=maps" 
+                           style="color:#eee;font-size:12px;position:absolute;top:0px;left:10px;">
+                          Жуковский
+                        </a>
+                        <a href="https://yandex.ru/maps/20571/zhukovskiy/house/molodyozhnaya_ulitsa_21a/Z0EYdg5gQEUDQFtvfXpxdH1rYQ==/?indoorLevel=1&ll=38.091425%2C55.605241&utm_medium=mapframe&utm_source=maps&z=18.8" 
+                           style="color:#eee;font-size:12px;position:absolute;top:14px;left:10px;">
+                          Молодёжная улица, 21А — Яндекс Карты
+                        </a>
+                        <iframe 
+                          src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=38.091425%2C55.605241&mode=whatshere&whatshere%5Bpoint%5D=38.090904%2C55.605185&whatshere%5Bzoom%5D=17&z=18.8&theme=dark"
+                          width="100%" 
+                          height="100%" 
+                          frameborder="0" 
+                          allowfullscreen="true" 
+                          style="position:relative;filter:grayscale(10%) contrast(90%);">
+                        </iframe>
+                    </div>
+                </div>
+            
+                <div class="contacts__content">
+                    <div class="contacts__cards">
+                        <div class="contacts__card contacts__card--small">
+                            <span class="contacts__card-title">Телеграм</span>
+                            <a href="./404.html" class="contacts__card-link main-text">@code-x</a>
+                        </div>
+                        <!-- ./contacts__card -->
+                        <div class="contacts__card contacts__card--big">
+                            <span class="contacts__card-title">Телефон</span>
+                            <a href="tel:+79152785639" class="contacts__card-link main-text">+7 (915) 278-56-39</a>
+                        </div>
+                        <!-- ./contacts__card -->
+                    </div>  
+                    <!-- /.contacts__cards -->
+                    <div class="contacts__cards">
+                        <div class="contacts__card contacts__card--big">
+                            <span class="contacts__card-title">Почта</span>
+                            <a href="mailto:zakaz@code-x.website" class="contacts__card-link main-text">zakaz@code-x.website</a>
+                        </div>
+                        <!-- ./contacts__card -->
+                        <div class="contacts__card contacts__card--small">
+                            <span class="contacts__card-title">Соц-сети</span>
+                            <div class="contacts__socials">
+                                <a href="#" class="contacts__socials-link">
+                                    <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="1.46875" width="47" height="47" rx="23.5" stroke="white" stroke-opacity="0.19"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6177 15.9688V22.5606C16.6213 21.364 17.824 20.7611 19.2196 20.7611C19.938 20.7611 20.5824 20.8977 21.1584 21.1707C21.7376 21.441 22.1708 21.7885 22.4619 22.2101C22.7559 22.6348 22.9549 23.1008 23.0615 23.6145C23.1688 24.1254 23.2222 24.9211 23.2222 25.9988V33.0478H20.1044V26.6996C20.1044 25.4408 20.0478 24.6419 19.9292 24.3033C19.8104 23.962 19.6024 23.6946 19.3026 23.4958C19.0026 23.2939 18.6286 23.1928 18.1773 23.1928C17.6607 23.1928 17.1974 23.3235 16.7937 23.5789C16.3841 23.8372 16.087 24.2233 15.9 24.7399C15.7098 25.2567 15.6147 26.0197 15.6178 27.0293L15.6147 33.048H12.5V15.9688H15.6177ZM27.8958 15.9688V22.5606C28.8991 21.364 30.1019 20.7611 31.4972 20.7611C32.213 20.7611 32.8601 20.8977 33.4394 21.1707C34.0152 21.441 34.4488 21.7885 34.7396 22.2101C35.0336 22.6348 35.2326 23.1008 35.3395 23.6145C35.4465 24.1254 35.5 24.9211 35.5 25.9988V33.0478H32.385V26.6996C32.385 25.4408 32.3259 24.6419 32.2069 24.3033C32.0881 23.962 31.8804 23.6946 31.5803 23.4958C31.2834 23.2939 30.9062 23.1928 30.455 23.1928C29.9383 23.1928 29.4752 23.3235 29.0713 23.5789C28.6646 23.8372 28.3677 24.2233 28.1775 24.7399C27.9904 25.2567 27.8956 26.0197 27.8956 27.0293V33.048H24.7807V15.9688H27.8958Z" fill="#757575"/>
+                                    </svg>    
+                                </a>
+                                <a href="#" class="contacts__socials-link">
+                                    <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="1.46875" width="47" height="47" rx="23.5" stroke="white" stroke-opacity="0.19"/>
+                                        <path d="M16.744 27.4519C17.6466 28.6749 18.6838 29.7564 20.0236 30.5216C21.5409 31.3888 23.1745 31.6504 24.8974 31.5706C25.7023 31.5321 25.9444 31.3221 25.9815 30.5201C26.0064 29.9707 26.0699 29.4227 26.3404 28.9289C26.6063 28.4447 27.0096 28.3531 27.475 28.6543C27.7067 28.8066 27.9018 28.997 28.0865 29.2009C28.54 29.6958 28.979 30.2085 29.4487 30.6872C30.0393 31.2885 30.7398 31.6428 31.6187 31.5706L35.0238 31.5721C35.5718 31.535 35.8568 30.8632 35.5423 30.2496C35.3207 29.8214 35.0299 29.4404 34.7226 29.0707C34.0267 28.2348 33.2067 27.5224 32.4314 26.7662C31.7326 26.0839 31.6883 25.6879 32.2496 24.9007C32.864 24.0407 33.5228 23.2149 34.1418 22.3595C34.7194 21.5604 35.312 20.7625 35.6144 19.8068C35.8081 19.1968 35.6368 18.928 35.0137 18.8201C34.9058 18.8025 34.7936 18.8025 34.6843 18.8025L30.979 18.7978C30.5227 18.7906 30.2716 18.9901 30.1104 19.3945C29.8917 19.9414 29.6673 20.4879 29.4069 21.0139C28.8192 22.2105 28.1616 23.3671 27.2399 24.3451C27.036 24.5605 26.8099 24.834 26.4703 24.7218C26.0464 24.5666 25.9209 23.8667 25.9281 23.6304L25.925 19.3534C25.8426 18.7436 25.7063 18.4702 25.0995 18.3516H21.251C20.7386 18.3516 20.48 18.5514 20.2051 18.8718C20.0486 19.0582 19.9996 19.1777 20.3249 19.2397C20.9628 19.3606 21.3249 19.7744 21.4194 20.4143C21.5717 21.4381 21.5612 22.466 21.4728 23.4927C21.4476 23.7925 21.396 24.0911 21.2774 24.3718C21.0915 24.8134 20.79 24.9021 20.3956 24.6304C20.0399 24.3851 19.7888 24.0395 19.5417 23.6924C18.6185 22.3877 17.8829 20.9817 17.2816 19.5041C17.1088 19.077 16.809 18.8187 16.3569 18.8112C15.2459 18.7935 14.1336 18.7909 13.0211 18.8126C12.3533 18.8245 12.1538 19.1495 12.4273 19.7567C13.6372 22.4497 14.9846 25.0674 16.744 27.4519Z" fill="#757575"/>
+                                    </svg>   
+                                </a>
+                                <a href="#" class="contacts__socials-link">
+                                    <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="1.46875" width="47" height="47" rx="23.5" stroke="white" stroke-opacity="0.19"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M30.3844 35.7479C30.7064 35.9759 31.1214 36.0329 31.4914 35.8929C31.8614 35.7519 32.1334 35.4359 32.2154 35.0529C33.0844 30.9689 35.1924 20.6319 35.9834 16.9169C36.0434 16.6369 35.9434 16.3459 35.7234 16.1589C35.5034 15.9719 35.1984 15.9179 34.9264 16.0189C30.7334 17.5709 17.8204 22.4159 12.5424 24.3689C12.2074 24.4929 11.9894 24.8149 12.0004 25.1679C12.0124 25.5219 12.2504 25.8289 12.5934 25.9319C14.9604 26.6399 18.0674 27.6249 18.0674 27.6249C18.0674 27.6249 19.5194 32.0099 20.2764 34.2399C20.3714 34.5199 20.5904 34.7399 20.8794 34.8159C21.1674 34.8909 21.4754 34.8119 21.6904 34.6089C22.9064 33.4609 24.7864 31.6859 24.7864 31.6859C24.7864 31.6859 28.3584 34.3049 30.3844 35.7479ZM19.3744 27.0709L21.0534 32.6089L21.4264 29.1019C21.4264 29.1019 27.9134 23.2509 31.6114 19.9159C31.7194 19.8179 31.7344 19.6539 31.6444 19.5389C31.5554 19.4239 31.3914 19.3969 31.2684 19.4749C26.9824 22.2119 19.3744 27.0709 19.3744 27.0709Z" fill="#757575"/>
+                                    </svg>    
+                                </a>
+                                <a href="#" class="contacts__socials-link">
+                                    <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="1.46875" width="47" height="47" rx="23.5" stroke="white" stroke-opacity="0.19"/>
+                                        <path d="M15.2471 32.7939C18.1462 33.1169 21.0802 33.1189 24.002 33.1169C26.9247 33.1189 29.8593 33.1169 32.7573 32.7939C33.9815 32.6571 34.9986 31.7391 35.2851 30.4958C35.6927 28.7257 35.6939 26.7917 35.6939 24.9685C35.6939 23.1456 35.6977 21.2125 35.2897 19.4424C35.0032 18.1979 33.9864 17.2812 32.7617 17.1446C29.8627 16.8204 26.9282 16.8193 24.0069 16.8204C21.0851 16.8193 18.1497 16.8204 15.2503 17.1446C14.0272 17.2812 13.0101 18.1979 12.7248 19.4424C12.3174 21.2125 12.3125 23.1456 12.3125 24.9688C12.3125 26.792 12.3125 28.7257 12.7205 30.4958C13.0055 31.7391 14.0226 32.6571 15.2471 32.7939ZM20.9863 20.8664C23.4636 22.159 25.9252 23.4426 28.4191 24.7439C25.9325 26.033 23.4705 27.3102 20.9863 28.5984V20.8664Z" fill="#757575"/>
+                                    </svg>                                        
+                                </a>
+                            </div>
+                            <!-- /.contacts__socials -->
+                        </div>
+                        <!-- ./contacts__card -->
+                    </div>
+                    <!-- /.contacts__cards -->
+                </div>
+                <!-- /.contacts__content -->
+            </div>
+            <!-- /.contacts__wrapper -->
+
+        </section>
+        <!-- /.contacts -->
+
+        <section class="feedback section container">
+            <div class="feedback__heading">
+                <span class="feedback__sub section-sub">Наши услуги</span>
+                <div class="feedback__title-wrap">
+                    <h2 class="feedback__title section-title section-title--star">Готовы к чудесам? Тогда вперед!</h2>
+                </div>
+                <!-- /.feedback__title-wrap -->
+            </div>
+            <!-- /.feedback__heading -->
+            
+            <div class="feedback__content">
+
+                <div class="feedback__tags-wrap">
+                    <span class="feedback__tags-title">digital-решение для вашего бизнеса под ключ</span>
+
+                    <div class="feedback__tags">
+                        <a href="./404.html" class="feedback__tag">Дизайн</a>
+                        <a href="./404.html" class="feedback__tag">Frontend</a>
+                        <a href="./404.html" class="feedback__tag">Backend</a>
+                        <a href="./404.html" class="feedback__tag">Quiz</a>
+                        <a href="./404.html" class="feedback__tag">Одностраничный магазин</a>
+                        <a href="./404.html" class="feedback__tag">Многостраничный сайт</a>
+                        <a href="./404.html" class="feedback__tag">Quiz</a>
+                        <a href="./404.html" class="feedback__tag">Многостраничный сайт</a>
+                        <a href="./404.html" class="feedback__tag">Дизайн</a>
+                        <a href="./404.html" class="feedback__tag">Quiz</a>
+                        <a href="./404.html" class="feedback__tag">Backend</a>
+                    </div>
+                    <!-- /.feedback__tags -->
+                </div>
+                <!-- /.feedback__tags-wrap -->
+
+                <form action="#" class="feedback__form">
+                    <div class="feedback__main-inputs">
+                        <input type="text" class="feedback__input" type="text" placeholder="Имя*" required>
+                        <input type="text" class="feedback__input" type="email" placeholder="Email*" required>
+                        <input type="text" class="feedback__input" type="tel" placeholder="Телефон*" required>
+                        <input type="text" class="feedback__input" type="text" placeholder="Компания">
+                    </div>
+                    <!-- /.feedback__main-inputs -->
+
+                    <div class="feedback__textarea-wrap">
+                        <textarea class="feedback__input feedback__textarea" placeholder="Опишите вашу задачу"></textarea>
+                        <label for="feedbackFile" class="feedback__file-button">Прикрепите файл</label>
+                        <input type="file" id="feedbackFile" hidden>
+                    </div>
+                    <!-- /.feedback__textarea-wrap -->
+
+                    <div class="feedback__budget-wrap">
+                        <span class="feedback__budget-title">Ваш бюджет</span>
+
+                        <div class="feedback__budget-input-wrap">
+                            <input type="range" class="feedback__budget-input" min="0" max="100" value="50" step="0.01">
+
+                            <div class="feedback__budget-line"></div>
+
+                            <div class="feedback__budget-dot"></div>
+                            <span class="feedback__budget-sum">1 000 000 ₽</span>
+                        </div>
+                        <!-- /.feedback__budget-input-wrap -->
+
+                    </div>
+                    <!-- /.feedback__budget-wrap -->
+
+                    <div class="feedback__form-footer">
+                        <label for="feedbackPolicy" class="feedback__policy">
+                            <input type="checkbox" id="feedbackPolicy" class="feedback__policy-checkbox" name="feedbackPolicy" required>
+                            <div class="feedback__policy-checkbox-custom"></div>
+                            <span class="feedback__policy-text">Даю своё согласие на обработку <a href="./404.html" class="feedback__policy-text-link">персональных данных</a></span>
+                        </label>
+                        <!-- /.feedback__policy -->
+                        <button class="feedback__form-button section-link">
+                            <span class="section-link__text">Обсудить проект</span>
+                            <span class="section-link__icon"></span>
+                        </button>
+                    </div>
+                    <!-- /.feedback__form-footer -->
+                </form>
+                 
+            </div>
+            <!-- /.feedback__content -->
+        </section>
+        <!-- /.feedback -->
+        
+
+        <footer class="footer section">
+            <div class="container">
+                <div class="footer__heading row between-xs container">
+                    <div class="footer__logos">
+                        <a href="#" class="footer__logo-link"><img src="./img/footer-logo.svg" alt="" class="footer__logo-img"></a>
+                        <a href="#" class="footer__logo-link"><img src="./img/3l.svg" alt="" class="footer__logo-img"></a>
+                        <a href="#" class="footer__logo-link"><img src="./img/muchi.png" alt="" class="footer__logo-img"></a>
+                        <a href="#" class="footer__logo-link"><img src="./img/elva.png" alt="" class="footer__logo-img"></a>
+                    </div>
+                    <!-- /.footer__logos -->
+    
+                    <div class="footer__location col-md-3 col-md-offset-2">
+                        <h3 class="footer__location-title">Головной офис</h3>
+                        <span class="footer__location-text">Адрес: 140180, Московская область г.&nbsp;Жуковский, ул. Молодежная, д. 21А, оф. 1</span>
+                    </div>
+                    <!-- /.footer__location -->
+    
+                    <div class="footer__contacts col-xs-7 col-sm-5 col-md-3">
+                        <div class="footer__socials">
+                            <a href="#" class="footer__socials-link"><img src="./img/hh.svg" alt="" class="footer__socials-img"></a>
+                            <a href="#" class="footer__socials-link"><img src="./img/h.svg" alt="" class="footer__socials-img"></a>
+                            <a href="#" class="footer__socials-link"><img src="./img/vk.png" alt="" class="footer__socials-img"></a>
+                            <a href="#" class="footer__socials-link"><img src="./img/telegram.svg" alt="" class="footer__socials-img"></a>
+                            <a href="#" class="footer__socials-link"><img src="./img/youtube.png" alt="" class="footer__socials-img"></a>
+                        </div>
+                        <!-- /.footer__socials -->
+                        <div class="footer__contacts-links">
+                            <a href="#" class="footer__contacts-link">Телефон: +7 (915) 281-63-22</a>
+                            <a href="#" class="footer__contacts-link">E-mail: zakaz@code-x.website</a>
+                        </div>
+                        <!-- /.footer__contacts-links -->
+                    </div>
+                    <!-- /.footer__contacts -->
+    
+                </div>
+                <!-- /.footer__heading row container -->
+    
+                <div class="footer__nav row between-md start-lg">
+                    <div class="footer__nav-block col-lg-5">
+                        <h3 class="footer__nav-title">Услуги</h3>
+                        <nav class="footer__nav-links">
+                            <a href="#" class="footer__nav-link">Внедрение CRM Bitrix24</a>
+                            <a href="#" class="footer__nav-link">Разработка чат-бота</a>
+                            <a href="#" class="footer__nav-link">Разработка порталов LMS</a>
+                            <a href="#" class="footer__nav-link">Парсинг данных</a>
+                            <a href="#" class="footer__nav-link">Разработка интерактивных 3d сайтов</a>
+                            <a href="#" class="footer__nav-link">Решения на базе AI</a>
+                            <a href="#" class="footer__nav-link">Веб-разработка</a>
+                            <a href="#" class="footer__nav-link">Мобильная разработка</a>
+                            <a href="#" class="footer__nav-link">Разработка интерактивного 3D ассистента для сайта</a>
+                            <a href="#" class="footer__nav-link">Разработка онлайн сервисов</a>
+                            <a href="#" class="footer__nav-link">DevOps</a>
+                            <a href="#" class="footer__nav-link">IT-аудит</a>
+                            <a href="#" class="footer__nav-link">Digital-маркетинг</a>
+                            <a href="#" class="footer__nav-link">SEO</a>
+                            <a href="#" class="footer__nav-link">SMM</a>
+
+                        </nav>
+                        <!-- /.footer__nav-links -->
+                    </div>
+                    <!-- /.footer__nav-block -->
+                    
+                    <div class="footer__nav-block col-lg-2">
+                        <h3 class="footer__nav-title">Кейсы</h3>
+                        <nav class="footer__nav-links">
+                            <a href="#" class="footer__nav-link">Структура</a>
+                            <a href="#" class="footer__nav-link">Контакты</a>
+                            <a href="#" class="footer__nav-link">Партнеры</a>
+                            <a href="#" class="footer__nav-link">Карьера</a>
+                        </nav>
+                        <!-- /.footer__nav-links -->
+                    </div>
+                    <!-- /.footer__nav-block -->
+                    
+                    <div class="footer__nav-block col-lg-2">
+                        <h3 class="footer__nav-title">О компании</h3>
+                        <nav class="footer__nav-links">
+                            <a href="#" class="footer__nav-link">Структура</a>
+                            <a href="#" class="footer__nav-link">Контакты</a>
+                            <a href="#" class="footer__nav-link">Партнеры</a>
+                            <a href="#" class="footer__nav-link">Карьера</a>
+                        </nav>
+                        <!-- /.footer__nav-links -->
+                    </div>
+                    <!-- /.footer__nav-block -->
+                    
+                    <div class="footer__nav-block col-lg-2">
+                        <h3 class="footer__nav-title">Медиа</h3>
+                        <nav class="footer__nav-links">
+                            <a href="#" class="footer__nav-link">Новости</a>
+                            <a href="#" class="footer__nav-link">Мероприятия</a>
+                            <a href="#" class="footer__nav-link">СМИ о нас</a>
+                            <a href="#" class="footer__nav-link">Статьи</a>
+                        </nav>
+                        <!-- /.footer__nav-links -->
+                    </div>
+                    <!-- /.footer__nav-block -->
+                    
+                </div>
+                <!-- /.footer__nav -->
+    
+                <div class="footer__info row between-sm middle-xs">
+                    <div class="footer__info-company">
+                        <span class="footer__info-text">© 2018-2025.  Code-x web development.</span>
+                        <span class="footer__info-text">Все права защищены.</span>
+                        <span class="footer__info-text">ИНН: 9875483 ОГРН: 9248753485</span>
+                    </div>
+                    <!-- /.footer__info-company -->
+                    <a href="#" class="footer__info-link footer__info-text">Политика обработки персональных данных</a>
+                    <a href="#" class="footer__info-link footer__info-text">Файлы cookie</a>
+                    <a href="#" class="footer__info-social"></a>
+                </div>
+                <!-- /.footer__info -->
+
+            </div>
+            <!-- /.container -->
+
+        </footer>
+        <!-- /.footer -->
+
+    </main>
+</body>
+</html>

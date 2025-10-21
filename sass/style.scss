@@ -1,0 +1,76 @@
+    // base
+
+    @import "base/variables";
+    @import "base/fonts";
+    @import "base/settings";
+
+
+    // layouts
+
+    @import "layouts/header";
+    @import "layouts/footer";
+
+    
+    // components
+
+    @import "components/team";
+    @import "components/error-page";
+    @import "components/technologies";
+    @import "components/reviews";
+    @import "components/feedback";
+    @import "components/projects";
+    @import "components/questions";
+    @import "components/explanations";
+    @import "components/real-projects";
+
+
+    // index
+
+    @import "templates/home/promo";
+    @import "templates/home/services";
+    @import "templates/home/clients";
+    @import "templates/home/blogs";
+    // @import "templates/home/projects";
+    // @import "templates/home/tasks";
+    // @import "templates/home/group";
+    // @import "templates/home/trust";
+    // @import "templates/home/tech";
+    // @import "templates/home/feedback";
+
+
+    // company
+    @import "templates/company/company-promo";
+
+    // services
+
+    @import "templates/services/services";
+
+
+    // corporate-website
+
+    @import "templates/corporate-website/corporate-promo";
+    @import "templates/corporate-website/corporate-team";
+    @import "templates/corporate-website/corporate-about";
+    @import "templates/corporate-website/corporate-advantage";
+    @import "templates/corporate-website/corporate-stages";
+    @import "templates/corporate-website/corporate-cms";
+    @import "templates/corporate-website/corporate-optimization";
+    @import "templates/corporate-website/corporate-speed";
+    @import "templates/corporate-website/corporate-cases";
+    @import "templates/corporate-website/corporate-price";
+    @import "templates/corporate-website/corporate-work";
+    @import "templates/corporate-website/corporate-services";
+
+
+    // site-protection
+
+    @import "templates/site-protection/protection-promo";
+    @import "templates/site-protection/protection-important";
+    @import "templates/site-protection/protection-explanations";
+    @import "templates/site-protection/protection-advantages";
+    @import "templates/site-protection/protection-team";
+    // contacts
+
+    @import "templates/contacts/contacts";
+
+    @import "base/media";

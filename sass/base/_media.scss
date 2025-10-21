@@ -1,0 +1,626 @@
+// @media screen and (max-width: 1720px) {
+//   .footer {
+//     &__nav {
+//       &-link {
+//         max-width: 240px;
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 1600px) {
+//   .header__content {
+//     max-width: 1000px;
+//   }
+// }
+
+// @media screen and (max-width: 1508px) {
+//   .promo {
+//     &__card {
+//       &_active {
+//         width: 370px;
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 1439px) {
+//   .promo {
+//     &__title {
+//       font-size: 56px;
+//     }
+//   }
+//   .tasks {
+//     & .swiper-slide {
+//       height: 400px;
+//     }
+//     &__slide {
+//       &-title {
+//         font-size: 20px;
+//       }
+//     }
+//   }
+//   .projects {
+//     & .swiper {
+//       height: 700px;
+//     }
+//     &__slide {
+//       &-content {
+//         padding: 60px;
+//       }
+//     }
+//   }
+//   .trust {
+//     &__title {
+//       font-size: 56px;
+//     }
+//     &__card {
+//       &-img {
+//         max-height: 60px;
+//       }
+//     }
+//   }
+// /* PADDINGS */
+
+//   .promo {
+//     padding: 60px;
+//   }
+//   .tasks,
+//   .projects__info,
+//   .projects__thumb,
+//   .trust,
+//   .tech {
+//     padding: 0px 60px;
+//   }
+//   .blogs {
+//     padding-left: 60px;
+//     padding-right: 60px;
+// }
+
+// };
+
+// @media screen and (max-width: 1279px) {
+//   .tasks {
+//     &__heading {
+//       justify-content: space-between;
+//       padding-right: 0;
+//     }
+//     & .row {
+//       gap: 20px;
+//     }
+//     &__title {
+//       font-size: 40px;
+//     }
+//     & .swiper-slide {
+//       height: 350px;
+//     }
+//     &__slide {
+//       padding: 20px;
+//       &-title {
+//         font-size: 16px;
+//       }
+//       &-link {
+//         &-text {
+//           font-size: 12px;
+//         }
+//         &-img {
+//           width: 30px;
+//           height: 30px;
+//         }
+//       }
+//     }
+//   }
+//   .projects {
+//     &__heading {
+//       justify-content: space-between;
+//       padding-right: 0;
+//     }
+//     &__heading .row {
+//       gap: 20px;
+//     }
+//     &__title {
+//       font-size: 40px;
+//       &-content {
+//         padding: 0px 10px;
+//       }
+//     }
+//   }
+//   .group {
+//     &__title {
+//       font-size: 44px;
+//     }
+//     &__performance {
+//       &-title {
+//         font-size: 90px;
+//       }
+//       &-info {
+//         max-width: 200px;
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 1023px) {
+//   .promo {
+//     &__title {
+//       font-size: 76px;
+//     }
+//     &__slider {
+//       margin-top: 50px;
+//     }
+//   }
+//   .projects {
+//     & .swiper {
+//       height: 600px;
+//     }
+//   }
+//   .group {
+//     &__tabs {
+//       margin-top: 50px;
+//     }
+//     &__performance {
+//       &-cards {
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//         gap: 40px 20px;
+//         align-items: start;
+//       }
+//       &-card {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         text-align: center;
+//       }
+//       &-info {
+//         max-width: 320px;
+//       }
+//       &-line {
+//         display: none;
+//       }
+//     }
+//   }
+//   .trust {
+//     &__cards {
+//       margin-top: 50px;
+//     }
+//   }
+//   .tech {
+//     &__categories {
+//       margin-top: 30px;
+//       max-width: 100%;
+//       flex-wrap: nowrap;
+//     }
+//     &__cards {
+//       &-right {
+//         display: flex;
+//         justify-content: space-between;
+//         margin-top: 50px;
+//       }
+//     }
+//     &__card {
+//       &-right {
+//         width: 32%;
+//         height: 200px;
+//       }
+//     }
+//   }
+//   .blogs {
+//     &__cards {
+//       &-wrap {
+//         row-gap: 50px;
+//       }
+//     }
+//     &__heading {
+//       &-sub {
+//         margin-top: 50px;
+//       }
+//     }
+//   }
+//   .services {
+//     &__card {
+//       padding: 20px;
+//       &-text {
+//         max-width: 100%;
+//       }
+//     }
+//   }
+//   .footer {
+//     &__heading {
+//       flex-direction: column;
+//       row-gap: 40px;
+//     }
+//     &__contacts {
+//       &-links {
+//         display: flex;
+//         flex-direction: column;
+//       }
+//     }
+//     &__logos {
+//       display: flex;
+//       align-items: center;
+//       gap: 20px;
+//     }
+//     &__nav {
+//       gap: 30px;
+//     }
+//     &__info {
+//       column-gap: 20px;
+//     }
+//   }
+//   .feedback {
+//     padding-top: 80px;
+//   }
+//   .tasks,
+//   .projects,
+//   .group,
+//   .trust,
+//   .tech,
+//   .blogs {
+//     margin-top: 80px;
+//   }
+// }
+
+// @media screen and (max-width: 767px) {
+//   .promo {
+//     &__title {
+//       font-size: 40px;
+//     }
+//   }
+//   .projects {
+//     &__heading {
+//       margin-bottom: 30px;
+//     }
+//     &__slide {
+//       &-content {
+//         padding: 40px;
+//       }
+//       &-title {
+//         font-size: 30px;
+//       }
+//       &-slide {
+//         padding: 8px;
+//       }
+//     }
+//   }
+//   .group {
+//     &__about {
+//       &-cards {
+//         max-width: 500px;
+//       }
+//       &-card {
+//         max-width: 100px;
+//         width: 100%;
+//       }
+//     }
+//     &__tabs {
+//       &-images {
+//         margin-bottom: 30px;
+//       }
+//     }
+//     &__performance {
+//       &-cards {
+//         margin-top: 50px;
+//       }
+//       &-title {
+//         font-size: 60px;
+//       }
+//     }
+//   }
+//   .trust {
+//     &__card {
+//       flex-basis: 45%;
+//     }
+//   }
+//   .tech {
+//     &__categories {
+//       display: grid;
+//       grid-template-columns: repeat(2, 1fr);
+//       gap: 20px;
+//     }
+//     &__category {
+//       max-width: none;
+//       width: auto;
+//     }
+//     &__cards {
+//       &-center {
+//         margin-top: 50px;
+//       }
+//       &-right {
+//         flex-direction: column;
+//       }
+//     }
+//     &__card {
+//       &-right {
+//         width: 100%;
+//       }
+//       &-left {
+//         &-title {
+//           letter-spacing: 1.5px;
+//         }
+//       }
+//     }
+//   }
+//   .feedback {
+//     &__form {
+//       row-gap: 30px;
+//       margin-top: 30px;
+//     }
+//     &__input {
+//       max-width: 100%;
+//       &-file {
+//         width: 100%;
+//       }
+//     }
+//     &__policy {
+//       width: 100%;
+//       &-button-wrap {
+//         flex-wrap: wrap;
+//       }
+//     }
+//     &__button {
+//       width: 100%;
+//       margin-top: 30px;
+//     }
+//   }
+//   .services {
+//     &__cards {
+//       grid-template-columns: repeat(2, 1fr);
+//     }
+//     &__card {
+//       height: 250px;
+//     }
+//   }
+//   .footer {
+//     &__logos {
+//       max-width: 100%;
+//       flex-wrap: wrap;
+//     }
+//     &__nav {
+//       &-links {
+//         column-gap: 20px;
+//         max-height: 450px;
+//       }
+//       &-link {
+//         max-width: 200px;
+//       }
+//     }
+//     &__info {
+//       flex-direction: column;
+//       text-align: center;
+//     }
+//   }
+// /* FONT SIZES */
+
+//   .tasks__title,
+//   .projects__title,
+//   .trust__title,
+//   .tech__title,
+//   .blogs__heading-title,
+//   .clients__heading-title,
+//   .feedback__title,
+//   .group__title {
+//     font-size: 35px;
+//   }
+//   .tech__card-left-title,
+//   .services__card-title,
+//   .group__tab-name,
+//   group__performance-info {
+//     font-size: 16px;
+//   }
+
+//   .promo__info,
+//   .projects__slide-tag,
+//   .tech__info,
+//   .tech__card-left-text,
+//   .footer__nav-title,
+//   .footer__nav-link,
+//   .footer__location-title,
+//   .group__info,
+//   .group__about-card-text,
+//   .group__tab-text,
+//   .group__tab-position {
+//     font-size: 14px;
+//   }
+//   .promo__card-text,
+//   .promo__link,
+//   .tasks__sub,
+//   .projects__slide-link,
+//   .services__card-text,
+//   .footer__location-text,
+//   .footer__contacts-link,
+//   .footer__info-text {
+//     font-size: 12px;
+//   }
+
+//   /* PADDINGS */
+
+//   .promo {
+//     padding: 40px;
+//   }
+//   .tasks,
+//   .projects__info,
+//   .projects__thumb,
+//   .trust,
+//   .tech {
+//     padding: 0px 40px;
+//   }
+//   .blogs {
+//     padding-left: 40px;
+//     padding-right: 40px;
+//   }
+
+// };
+
+// @media screen and (max-width: 479px) {
+//   .promo {
+//     &__title {
+//       font-size: 35px;
+//     }
+//     &__cards {
+//       gap: 10px;
+//     }
+//     &__card {
+//       max-width: 370px;
+//       width: 100%;
+//     }
+//   }
+//   .projects {
+//     &__slide {
+//       &-title {
+//         font-size: 26px;
+//       }
+//     }
+//   }
+//   .services {
+//     &__cards {
+//       grid-template-columns: repeat(1, 1fr);
+//     }
+//   }
+//   .footer {
+//     &__contacts {
+//       flex-basis: 100%;
+//       max-width: 100%;
+//     }
+//     &__nav {
+//       &-block:first-child {
+//         width: 100%;
+//       }
+//       &-links {
+//         max-height: none;
+//       }
+//       &-link {
+//         margin-bottom: 15px;
+//         max-width: none;
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 399px) {
+//   .tasks {
+//     & .swiper-slide {
+//       height: 400px;
+//     }
+//     &__slide {
+//       max-width: none;
+//     }
+//   }
+// };
+
+// =============================
+// Footer media queries summary
+// =============================
+
+@media screen and (max-width: 1720px) {
+  .footer {
+    &__nav {
+      &-link {
+        max-width: 240px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    &__heading {
+      flex-direction: column;
+      row-gap: 40px;
+    }
+    &__contacts {
+      &-links {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    &__logos {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    &__nav {
+      gap: 30px;
+    }
+    &__info {
+      column-gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    &__logos {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+    &__nav {
+      &-links {
+        column-gap: 20px;
+        max-height: 450px;
+      }
+      &-link {
+        max-width: 200px;
+      }
+    }
+    &__info {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .footer {
+    &__contacts {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+    &__nav {
+      &-block:first-child {
+        width: 100%;
+      }
+      &-links {
+        max-height: none;
+      }
+      &-link {
+        margin-bottom: 15px;
+        max-width: none;
+      }
+    }
+  }
+}
+
+// =============================
+// Contacts section responsive
+// =============================
+
+@media screen and (max-width: 1023px) {
+  .contacts {
+    margin-top: 80px;
+    &__title-wrap { justify-content: flex-start; }
+    &__title { max-width: 100%; }
+    &__wrapper { flex-direction: column; }
+    &__map { height: 420px; padding: 20px; }
+    &__content { height: auto; }
+    &__cards { flex-direction: column; }
+    &__card--small { max-width: 100%; }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    margin-top: 60px;
+    &__map { height: 360px; }
+    &__card { padding: 20px; }
+    &__card-title { font-size: 24px; }
+    &__card-link { font-size: 18px; }
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .contacts { &__map { height: 320px; } }
+}
+
+@media screen and (max-width: 425px) {
+  .contacts {
+    margin-top: 40px;
+    &__map { height: 280px; }
+  }
+}

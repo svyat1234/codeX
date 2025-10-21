@@ -1,0 +1,229 @@
+// .header {
+//   margin-top: 20px;
+//   background-color: rgba(255, 255, 255, 0.055);
+//   padding: 21px 90px;
+//   border-radius: 15px;
+// }
+// .header__content {
+//   max-width: 1200px;
+//   width: 100%;
+// }
+// .header__nav-link {
+//   display: inline-block;
+//   font-size: 16px;
+//   font-family: "Golos Text", sans-serif;
+//   font-weight: normal;
+//   line-height: 22.4px;
+//   letter-spacing: 0.48px;
+//   position: relative;
+//   transition: color 0.2s ease-in-out;
+
+//   &:hover {
+//     color: #00A570;
+//   }
+//   &:not(:last-child) {
+//     margin-right: 10px;
+//   }
+//   &:not(:first-child) {
+//     margin-left: 10px;
+//   }
+//   &:not(:last-child)::after {
+//     content: '';
+//     position: absolute;
+//     display: inline-block;
+//     top: 50%;
+//     margin-top: -7.5px;
+//     right: -11px;
+//     height: 15px;
+//     width: 1px;
+//     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+//   }
+// }
+// .header__contacts-link {
+//   font-family: "Golos Text", sans-serif;
+//   font-size: 18px;
+//   font-weight: normal;
+//   line-height: 22.4px;
+//   letter-spacing: 0.48px;
+//   transition: color 0.1s ease-in-out;
+
+//   &:hover {
+//     color: #00A570;
+//   }
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+// .header__socials-link {
+//   height: 20px;
+//   width: 20px;
+//   transition: opacity 0.1s ease-in-out;
+
+//   &:hover {
+//     opacity: 0.7;
+//   }
+//   &:not(:last-child) {
+//     margin-right: 20px;
+//   }
+// }
+// .header__socials-link-img {
+//   height: 100%;
+//   width: 100%;
+// }
+
+.header {
+    @include flex-center-between;
+    gap: 40px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 21px 52px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+    &__logo {
+        max-width: 140px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__nav-link {
+        font-size: 18px;
+        line-height: 100%;
+        font-weight: 400;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        max-width: 418px;
+        width: 100%;
+        gap: 80px;
+    }
+
+    &__contacts-link {
+        font-size: 18px;
+        line-height: 100%;
+        font-weight: 400;
+        transition: color 0.2s ease;
+        
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    &__socials-link {
+        display: flex;
+        height: 20px;
+        width: 20px;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    
+    &__socials-link-img {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__burger {
+        display: none;
+        width: 19px;
+        height: 16px;
+        background: url(../img/burger-menu.svg) no-repeat center / cover;
+        border: none;
+        cursor: pointer;
+        transition: opacity 0.1s ease-in-out;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    @include media('desktop') {
+
+        &__nav {
+            gap: 20px;
+        }
+
+        &__contacts {
+            gap: 20px;
+        }
+    }
+
+    @include media('laptop-large') {
+        &__nav, &__contacts, &__socials {
+            display: none;
+        }
+
+        &__burger {
+            display: block;
+        }
+    }
+
+    // 1240px: компактнее отступы и размеры логотипа
+    @include media('desktop-1240') {
+        padding: 21px 32px;
+
+        &__logo { max-width: 120px; }
+    }
+
+    // 1024px: снизить общий gap, улучшить доступность бургера
+    @include media('tablet-landscape') {
+        gap: 24px;
+
+        &__burger {
+            width: 22px;
+            height: 18px;
+        }
+    }
+
+    // 768px: ещё меньше паддинги, логотип компактнее
+    @include media('mobile-landscape') {
+        padding: 16px 20px;
+
+        &__logo { max-width: 110px; }
+    }
+
+    // 586px: минимизируем боковые поля
+    @include media('mobile-wide-586') {
+        padding: 14px 16px;
+    }
+
+    // 425px: компактные размеры
+    @include media('mobile-425') {
+        padding: 12px 14px;
+
+        &__burger {
+            width: 20px;
+            height: 16px;
+        }
+    }
+
+    // 320px: самый плотный режим
+    @include media('mobile-320') {
+        padding: 10px 12px;
+        &__logo { max-width: 100px; }
+    }
+}

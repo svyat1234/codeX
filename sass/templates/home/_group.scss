@@ -1,0 +1,183 @@
+.group {
+  margin-top: 150px;
+  padding-bottom: 70px;
+  background: url('../img/group-bg-green.png') no-repeat left bottom, url('../img/group-bg-yellow.png') no-repeat right top;
+}
+.group__title {
+  color: #FFF;
+  font-family: "Geist", sans-serif;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.group__info {
+  display: flex;
+  margin-top: 30px;
+  color: #FFF;
+  font-family: "Geist", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.group__about-cards {
+  margin-top: 35px;
+  max-width: 582px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.group__about-card {
+  text-decoration: none;
+  padding: 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 406px;
+  width: 122px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+
+  &:nth-child(1) {
+    border-right: 6px solid #00563A;
+  }
+  &:nth-child(2) {
+    border-right: 6px solid #543D0A;
+  }
+  &:nth-child(3) {
+    border-right: 6px solid #3D0B49;
+  }
+  &:nth-child(4) {
+    border-right: 6px solid #00563A;
+  }
+}
+.group__about-card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.group__about-card-icon_1 {
+  background: #00563A url("../img/location.svg") no-repeat center;
+}
+.group__about-card-icon_2 {
+  background: #543D0A url("../img/suitcase.svg") no-repeat center;
+}
+.group__about-card-icon_3 {
+  background: #3D0B49 url("../img/location.svg") no-repeat center;
+}
+.group__about-card-icon_4 {
+  background: #00563A url("../img/suitcase.svg") no-repeat center;
+}
+.group__about-card-text {
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg);
+  min-width: 215px;
+  max-width: 215px;
+  height: 58px;
+  margin-top: 130px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+.group__link {
+  margin-top: 50px;
+  display: inline-block;
+  padding: 16px 24px;
+  text-decoration: none;
+  color: #FFF;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+}
+.group__tabs {
+  border-radius: 30px;
+  border: 1px solid #333;
+  background: linear-gradient(158deg, #005427 10.91%, #001E0E 97.4%);
+  padding: 40px 30px 60px 30px;
+}
+.group__tabs-images {
+  gap: 25px;
+  margin-bottom: 50px;
+}
+.group__tabs-img {
+  width: 28%;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+.group__tabs-img-active {
+  opacity: 1;
+}
+.group__tab-text {
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 25px;
+}
+.group__tab-name {
+  font-family: "Inter", sans-serif;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.group__tab-position {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.group__performance-cards {
+  margin-top: 129px;
+}
+.group__performance-title {
+  font-family: "Inter", sans-serif;
+  font-size: 111.094px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+}
+.group__performance-line {
+  width: 1px;
+  height: 80px;
+  border-right: 1px solid #525662;
+}
+.group__performance-info {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31.2px;
+  display: flex;
+  max-width: 269px;
+  margin-top: 35px;
+}

@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разработка корпоративного сайта</title>
+    <link rel="icon" href="./img/logo.svg.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js defer"></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <main id="main">
+        
+        
+        <!-- HEADER -->
+
+        <header class="header container">
+            <a href="/" class="header__logo"><img src="./img/logo.svg.svg" alt="code-x" class="header__logo-img"></a>
+
+            <nav class="header__nav">
+                <a href="./services.html" class="link header__nav-link">Что мы делаем</a>
+                <a href="./company.html" class="link header__nav-link">Компания</a>
+                <a href="./services.html" class="link header__nav-link">Кейсы</a>
+                <a href="./contacts.html" class="link header__nav-link">Контакты</a>
+            </nav>
+
+            <div class="header__contacts">
+                <a href="mailto:zakaz@code-x.website" class="link header__contacts-link">zakaz@code-x.website</a>
+                <a href="tel:74954571825" class="link header__contacts-link">+7.495.457.18.25</a>
+            </div>
+            <!-- /.header__contacts -->
+             
+            <div class="header__socials">
+                <a href="./404.html" class="header__socials-link"><img src="./img/telegram.svg" alt="telegram" class="header__socials-link-img"></a>
+                <a href="./404.html" class="header__socials-link"><img src="./img/whatsapp.svg" alt="whatsapp" class="header__socials-link-img"></a>
+            </div>
+            <!-- /.header__socials -->
+
+            <button class="header__burger"></button>
+        </header>
+        <!-- /.header -->
+
+        <section class="protection-promo container">
+
+            <nav class="breadcrumbs">
+                <a href="#" class="breadcrumbs__item">Главная</a>
+                <a href="#" class="breadcrumbs__item">услуги</a>
+                <span href="#" class="breadcrumbs__item">защита сайта от штрафов</span>
+            </nav>
+            <!-- /.breadcrumbs -->
+
+            <div class="protection-promo__heading">
+                <h1 class="protection-promo__title"><span class="accent">защитим Сайт</span> от штрафов по&nbsp;152-ФЗ легко</h1>
+                <div class="protection-promo__info-block">
+                    <span class="protection-promo__info-text">Комплексное решение: документы, cookie-виджет, фиксация согласий и сопровождение.</span>
+                    <span class="protection-promo__info-text">Всё для спокойной работы вашего бизнеса.</span>
+                </div>
+                <!-- /.protection-promo__info -->
+            </div>
+            <!-- /.protection-promo__heading -->
+
+            <div class="protection-promo__cards">
+                <div class="protection-promo__card">
+                    <div class="protection-promo__card-icon"></div>
+                    <p class="protection-promo__card-text main-text">Подготовка документов для Роскомнадзора</p>
+                </div>
+                <!-- /.protection-promo__card -->
+                <div class="protection-promo__card">
+                    <div class="protection-promo__card-icon"></div>
+                    <p class="protection-promo__card-text main-text">Cookie-виджет для защиты от блокировки</p>
+                </div>
+                <!-- /.protection-promo__card -->
+            </div>
+            <!-- /.protection-promo__cards -->
+
+            <a href="#" class="protection-promo__link">Обсудить проект</a>
+
+            <img src="./img/site-protectiopn-pomo.png" aria-hidden="true" role="presentation" alt="" class="protection-promo__image"></img>
+
+        </section>
+        <!-- /.protection-promo -->
+
+        <section class="protection-team container">
+            <div class="protection-team__content">
+                
+                <div class="protection-team__image-wrap">
+                    <img src="./img/team-robot.png" alt="" class="protection-team__image">
+                </div>
+                <!-- /.protection-team__image-wrap -->
+
+                <div class="protection-team__info">
+                    <div class="protection-team__info-images">
+                        <div class="protection-team__info-img-wrap"><img src="./img/Nzswxew8Egg2.png" alt="" class="protection-team__info-img"></div>
+                        <div class="protection-team__info-img-wrap protection-team__info-img-wrap_active"><img src="./img/Nzswxew8Egg2.png" alt="" class="protection-team__info-img protection-team__info-img-wrap_active"></div>
+                        <div class="protection-team__info-img-wrap"><img src="./img/Nzswxew8Egg2.png" alt="" class="protection-team__info-img"></div>
+                        <div class="protection-team__info-img-wrap"><img src="./img/Nzswxew8Egg2.png" alt="" class="protection-team__info-img"></div>
+                    </div>
+                    <!-- /.protection-team__info-images -->
+
+                    <div class="protection-team__info-content">
+                        <div class="protection-team__info-heading">
+                            <h3 class="protection-team__info-title">Олег <br> Анатольевич</h3>
+                            <span class="protection-team__info-position">Предприниматель, бизнес-консультант (1991-2020 гг)</span>
+                        </div>
+                        <!-- /.protection-team__info-heading -->
+
+                        <p class="protection-team__info-text main-text">Высшее техническое образование УГТУ, высшее юридическое образование МИУ, Межведомственный институт повышения квалификации г. Санкт-Петербург, 2017г. Внесён в Национальный Реестр Специалистов РФ. Опыт в сфере малого и среднего бизнеса по разным направлениям 1991-2020 г.</p>
+                    </div>
+                    <!-- /.protection-team__info-content -->
+
+                </div>
+                <!-- /.protection-team__info -->
+            </div>
+            <!-- /.protection-team__content -->
+        </section>
+        <!-- /.protection-team -->
+
+        <section class="protection-important container section">
+            <div class="protection-important__heading">
+                <h2 class="protection-important__title section-title">Почему <br> <span class="accent">это важно?</span></h2>
+                <div class="protection-important__info-wrap"><p class="protection-important__info main-text">В 2025 году под действие закона попадают даже формы обратной связи, корзина и подписки на новости</p></div>
+            </div>
+            <!-- /.protection-important__heading -->
+
+            <div class="protection-important__cards">
+                <div class="protection-important__card">
+                    <div class="protection-important__card-icon protection-important__card-icon_present"></div>
+                    <h3 class="protection-important__card-title">Штрафы</h3>
+                    <p class="protection-important__card-text main-text">Выбирайте нужную категорию и получайте заказы прямо в телеграмм</p>
+
+                </div>
+                <!-- /.protection-important__card -->
+                 
+                <div class="protection-important__card">
+                    <div class="protection-important__card-icon protection-important__card-icon_trust"></div>
+                    <h3 class="protection-important__card-title">Блокировка</h3>
+                    <p class="protection-important__card-text main-text">Роскомнадзор может заблокировать ваш сайт</p>
+
+                </div>
+                <!-- /.protection-important__card -->
+
+                <div class="protection-important__card">
+                    <div class="protection-important__card-icon protection-important__card-icon_sell"></div>
+                    <h3 class="protection-important__card-title">Потеря доверия</h3>
+                    <p class="protection-important__card-text main-text">Если не уследить момент блокировки вы можете потерять своих клиентов</p>
+
+                </div>
+                <!-- /.protection-important__card -->
+
+            </div>
+            <!-- /.protection-important__cards -->
+        </section>
+        <!-- /.protection-important -->
+
+        <section class="protection-explanations explanations section">
+            <div class="container">
+                <div class="explanations__heading">
+                    <span class="section-sub">услуга под ключ</span>
+
+                    <div class="explanations__heading-content">
+                        <h2 class="explanations__title section-title">Комплексное <span class="accent">решение</span> для вашего сайта</h2>
+                        <span class="protection-explanations__info explanations__info main-text">Юридические документы + Техническое внедрение + Сопровождение</span>
+                    </div>
+                    <!-- /.corporate-approach__heading-content -->
+                </div>
+                <!-- /.corporate-approach__heading -->
+
+
+                <div class="explanations__cards">
+
+                    <div class="explanations__card">
+                        <div class="explanations__card-heading">
+                            <h3 class="explanations__card-title">Два клика и PWA-приложения</h3>
+                            <div class="explanations__card-icon"></div>
+                        </div>
+                        <!-- /.explanations__card-heading -->
+                
+                        <div class="explanations__card-text-wrap">
+                            <p class="explanations__card-text main-text">
+                                Ниже на фотографии изображен код сайта компании Porsche, на котором видны файлы Astro JS. Мы предполагаем, что в этой компании работают лучшие IT-специалисты, и они сделали правильный выбор.
+                            </p>
+                        </div>
+                        
+                        <img src="./img/corporate-approach.png" alt="" class="explanations__card-img">
+                    </div>  
+                    <!-- /.explanations__card -->
+                     
+                    <div class="explanations__card">
+                        <div class="explanations__card-heading">
+                            <h3 class="explanations__card-title">Gatsby vs WordPress vs Bitrix vs Tilda</h3>
+                            <div class="explanations__card-icon"></div>
+                        </div>
+                        <!-- /.explanations__card-heading -->
+                
+                        <div class="explanations__card-text-wrap">
+                            <p class="explanations__card-text main-text">
+                                Ниже на фотографии изображен код сайта компании Porsche, на котором видны файлы Astro JS. Мы предполагаем, что в этой компании работают лучшие IT-специалисты, и они сделали правильный выбор.
+                            </p>
+                        </div>
+                
+                        <img src="./img/corporate-approach.png" alt="" class="explanations__card-img">
+                    </div>  
+                    <!-- /.explanations__card -->
+                     
+                    <div class="explanations__card">
+                        <div class="explanations__card-heading">
+                            <h3 class="explanations__card-title">Можем использовать данные и процессы из прошлых CMS</h3>
+                            <div class="explanations__card-icon"></div>
+                        </div>
+                        <!-- /.explanations__card-heading -->
+                
+                        <div class="explanations__card-text-wrap">
+                            <p class="explanations__card-text main-text">
+                                Ниже на фотографии изображен код сайта компании Porsche, на котором видны файлы Astro JS. Мы предполагаем, что в этой компании работают лучшие IT-специалисты, и они сделали правильный выбор.
+                            </p>
+                        </div>
+                
+                        <img src="./img/corporate-approach.png" alt="" class="explanations__card-img">
+                    </div>  
+                    <!-- /.explanations__card -->
+                     
+                    <div class="explanations__card">
+                        <div class="explanations__card-heading">
+                            <h3 class="explanations__card-title">Делаем Correspondence analysis в исследованиях</h3>
+                            <div class="explanations__card-icon"></div>
+                        </div>
+                        <!-- /.explanations__card-heading -->
+                
+                        <div class="explanations__card-text-wrap">
+                            <p class="explanations__card-text main-text">
+                                Ниже на фотографии изображен код сайта компании Porsche, на котором видны файлы Astro JS. Мы предполагаем, что в этой компании работают лучшие IT-специалисты, и они сделали правильный выбор.
+                            </p>
+                        </div>
+                
+                        <img src="./img/corporate-approach.png" alt="" class="explanations__card-img">
+                    </div>  
+                    <!-- /.explanations__card -->
+                     
+                    <div class="explanations__card">
+                        <div class="explanations__card-heading">
+                            <h3 class="explanations__card-title">Специальный сервер для международных проектов</h3>
+                            <div class="explanations__card-icon"></div>
+                        </div>
+                        <!-- /.explanations__card-heading -->
+                
+                        <div class="explanations__card-text-wrap">
+                            <p class="explanations__card-text main-text">
+                                Ниже на фотографии изображен код сайта компании Porsche, на котором видны файлы Astro JS. Мы предполагаем, что в этой компании работают лучшие IT-специалисты, и они сделали правильный выбор.
+                            </p>
+                        </div>
+                
+                        <img src="./img/corporate-approach.png" alt="" class="explanations__card-img">
+                    </div>  
+                    <!-- /.explanations__card -->
+                     
+                </div>
+                <!-- /.explanations__cards -->
+
+            </div>
+            <!-- /.container -->
+
+        </section>
+        <!-- /.explanations -->
+
+        <div class="container protection-advantages section">
+            <div class="protection-advantages__heading">
+                <span class="protection-advantages__sub section-sub">преимущества</span>
+                <div class="explanations__heading-content">
+                    <h2 class="protection-advantages__title section-title">Почему <br>выбирают нас?</h2>
+                </div>
+                <!-- /.protection-advantages__heading-content -->
+            </div>
+            <!-- /.protection-advantages__heading -->
+            <div class="protection-advantages__content">
+                <div class="protection-advantages__content-wrap">
+                    <div class="protection-advantages__content-item protection-advantages__content-item--active">
+                        <img src="./img/protection-advantages-01.png" alt="" class="protection-advantages__content-img">
+                    </div>
+                    <div class="protection-advantages__content-item">
+                        <img src="./img/protection-advantages-01.png" alt="" class="protection-advantages__content-img">
+                    </div>
+                    <div class="protection-advantages__content-item">
+                        <img src="./img/protection-advantages-01.png" alt="" class="protection-advantages__content-img">
+                    </div>
+                    <div class="protection-advantages__content-item">
+                        <img src="./img/protection-advantages-01.png" alt="" class="protection-advantages__content-img">
+                    </div>
+                </div>
+
+                <div class="protection-advantages__cards">
+                    <div class="protection-advantages__card protection-advantages__card--active">
+                        <span class="protection-advantages__card-number">01</span>
+                        <h3 class="protection-advantages__card-title">Комплексный подход — юристы + IT</h3>
+
+                        <div class="protection-advantages__card-background"></div>
+                    </div>
+                    
+                    <div class="protection-advantages__card protection-advantages__card--active-next">
+                        <span class="protection-advantages__card-number">02</span>
+                        <h3 class="protection-advantages__card-title"> Экономия — от 30 000 ₽</h3>
+                        <span class="protection-advantages__card-text">(у конкурентов 50–100 тыс)</span>
+
+                        <div class="protection-advantages__card-background"></div>
+                    </div>
+
+                    <div class="protection-advantages__card">
+                        <span class="protection-advantages__card-number">03</span>
+                        <h3 class="protection-advantages__card-title">Опыт — документы готовят профильные юристы</h3>
+
+                        <div class="protection-advantages__card-background"></div>
+                    </div>
+
+                    <div class="protection-advantages__card">
+                        <span class="protection-advantages__card-number">04</span>
+                        <h3 class="protection-advantages__card-title">Снижение рисков штрафов и предписаний</h3>
+
+                        <div class="protection-advantages__card-background"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /.section protection-advantages -->
+ 
+        <section class="corporate-price section container">
+            
+            <div class="corporate-price__heading">
+                <span class="corporate-price__heading-sub">наши услуги</span>
+                <h2 class="corporate-price__title section-title">СТОИМОСТЬ <br> РАЗРАБОТКИ</h2>
+            </div>
+            <!-- /.corporate-price__heading -->
+        
+            <div class="corporate-price__content">
+
+                <div class="corporate-price__tabs-info">
+                    <span class="corporate-price__tabs-sub">digital-решение для вашего бизнеса под ключ</span>
+                    <div class="corporate-price__tabs-buttons">
+                        <button class="corporate-price__tabs-button">Дизайн</button>
+                        <button class="corporate-price__tabs-button">Frontend</button>
+                        <button class="corporate-price__tabs-button">Backend</button>
+                        <button class="corporate-price__tabs-button">Quiz</button>
+                        <button class="corporate-price__tabs-button">Одностраничный магазин</button>
+                        <button class="corporate-price__tabs-button">Многостраничный сайт</button>
+                        <button class="corporate-price__tabs-button">Quiz</button>
+                        <button class="corporate-price__tabs-button">Многостраничный сайт</button>
+                        <button class="corporate-price__tabs-button">Дизайн</button>
+                        <button class="corporate-price__tabs-button">Quiz</button>
+                        <button class="corporate-price__tabs-button">Backend</button>
+                    </div>
+                    <!-- /.corporate-price__tabs-buttons -->
+                </div>
+                <!-- /.corporate-price__tabs-info -->
+    
+                <div class="corporate-price__tab">
+
+                    <div class="corporate-price__tab-card">
+                        <div class="corporate-price__tab-about">
+                            <span class="corporate-price__about-title">услуга</span>
+                            <span class="corporate-price__about-title">описание</span>
+                            <span class="corporate-price__about-title">стоимость</span>
+                        </div>
+                        <!-- /.corporate-price__tab-about -->
+    
+                        <div class="corporate-price__tab-content">
+                            <div class="corporate-price__tab-heading">
+                                <h3 class="corporate-price__tab-title">Одностраничный сайт</h3>
+                                <p class="corporate-price__tab-text">Написание текста, позиционирование,
+                                    проработка УТП и преимуществ
+                                    предложения.</p>
+                            </div>
+                            <!-- /.corporate-price__tab-heading -->
+    
+                            <ul class="corporate-price__tab-list">
+                                <li class="corporate-price__tab-item">Headless – единый контент для сайтов, приложений и digital-устройств</li>
+                                <li class="corporate-price__tab-item">Визуальный редактор – правки без программистов</li>
+                                <li class="corporate-price__tab-item">Гибкий API – работает с React, Next.js, GraphQL</li>
+                            </ul>
+                            <!-- /.corporate-price__tab-list -->
+    
+                            <div class="corporate-price__tab-price-action">
+                                <span class="corporate-price__tab-price">От 100 000 р</span>
+                                <a href="#" class="corporate-price__tab-link">
+                                    <span class="corporate-price__tab-link-text">Обсудить проект</span>
+                                    <div class="corporate-price__tab-link-icone"></div>
+                                </a>
+                                <!-- /.corporate-price__tab-link-wrap -->
+                            </div>
+                            <!-- /.corporate-price__tab-price-action -->
+                        </div>
+                        <!-- /.corporate-price__tab-content -->
+    
+                    </div>
+                    <!-- /.corporate-price__tab-card -->
+
+                    <div class="corporate-price__tab-card">
+    
+                        <div class="corporate-price__tab-content">
+                            <div class="corporate-price__tab-heading">
+                                <h3 class="corporate-price__tab-title">Одностраничный сайт</h3>
+                                <p class="corporate-price__tab-text">Написание текста, позиционирование,
+                                    проработка УТП и преимуществ
+                                    предложения.</p>
+                            </div>
+                            <!-- /.corporate-price__tab-heading -->
+    
+                            <ul class="corporate-price__tab-list">
+                                <li class="corporate-price__tab-item">Headless – единый контент для сайтов, приложений и digital-устройств</li>
+                                <li class="corporate-price__tab-item">Визуальный редактор – правки без программистов</li>
+                                <li class="corporate-price__tab-item">Гибкий API – работает с React, Next.js, GraphQL</li>
+                            </ul>
+                            <!-- /.corporate-price__tab-list -->
+    
+                            <div class="corporate-price__tab-price-action">
+                                <span class="corporate-price__tab-price">От 100 000 р</span>
+                                <a href="#" class="corporate-price__tab-link">
+                                    <span class="corporate-price__tab-link-text">Обсудить проект</span>
+                                    <div class="corporate-price__tab-link-icone"></div>
+                                </a>
+                                <!-- /.corporate-price__tab-link-wrap -->
+                            </div>
+                            <!-- /.corporate-price__tab-price-action -->
+                        </div>
+                        <!-- /.corporate-price__tab-content -->
+    
+                    </div>
+                    <!-- /.corporate-price__tab-card -->
+
+                </div>
+
+            </div>
+            <!-- /.corporate-price__content -->
+
+        </section>
+        <!-- /.corporate-price -->
+
+                
+        <!-- QUESTIONS -->
+
+        <div class="questions section container" id="questions">
+            <div class="questions__heading">
+                <span class="questions__sub section-sub">ответы на вопросы</span>
+                <div class="questions__title-wrap">
+                    <h2 class="questions__title section-title section-title--star">faq</h2>
+                </div>
+                <!-- /.questions__title-wrap -->
+            </div>
+            <!-- /.questions__heading -->
+        
+            <div class="questions__cards">
+                        <div class="questions__card">
+                            <h3 class="questions__card-title">Нужно ли уведомлять Роскомнадзор?</h3>
+                            <div class="questions__card-text-wrap">
+                                <p class="questions__card-text main-text">Выбирайте нужную категорию и получайте заказы прямо в телеграммВыбирайте нужную категорию и получайте заказы прямо в телеграммВыбирайте нужную категорию и получайте заказы прямо в телеграммВыбирайте нужную категорию и получайте заказы прямо в телеграммВыбирайте нужную категорию и получайте заказы прямо в телеграмм</p>
+                            </div>
+                            <!-- /.questions__card-text-wrap -->
+                            <div class="questions__card-icon">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9204 5.45125L2.38112 16.9905L0.167565 14.7769L11.7068 3.2377L1.2736 3.2377L1.27508 0.107734L17.0503 0.107733L17.0503 15.883L13.9204 15.8845V5.45125Z" fill="#303030"/>
+                                </svg>                            
+                            </div>
+                        </div>
+                        <!-- /.questions__card -->
+                         
+                        <div class="questions__card">
+                            <h3 class="questions__card-title">А если у меня сайт на Tilda / WordPress?</h3>
+                            <div class="questions__card-text-wrap">
+                                <p class="questions__card-text main-text">Выбирайте нужную категорию и получайте заказы прямо в телеграмм</p>
+                            </div>
+                            <!-- /.questions__card-text-wrap -->
+                            <div class="questions__card-icon">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9204 5.45125L2.38112 16.9905L0.167565 14.7769L11.7068 3.2377L1.2736 3.2377L1.27508 0.107734L17.0503 0.107733L17.0503 15.883L13.9204 15.8845V5.45125Z" fill="#303030"/>
+                                </svg>                            
+                            </div>
+                        </div>
+                        <!-- /.questions__card -->
+        
+                        <div class="questions__card">
+                            <h3 class="questions__card-title">Сколько времени занимает внедрение?</h3>
+                            <div class="questions__card-text-wrap">
+                                <p class="questions__card-text main-text">Выбирайте нужную категорию и получайте заказы прямо в телеграмм</p>
+                            </div>
+                            <!-- /.questions__card-text-wrap -->
+                            <div class="questions__card-icon">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9204 5.45125L2.38112 16.9905L0.167565 14.7769L11.7068 3.2377L1.2736 3.2377L1.27508 0.107734L17.0503 0.107733L17.0503 15.883L13.9204 15.8845V5.45125Z" fill="#303030"/>
+                                </svg>                            
+                            </div>
+                        </div>
+                        <!-- /.questions__card -->
+        
+                        <div class="questions__card">
+                            <h3 class="questions__card-title">Можно ли заказать только документы или только техническую часть?</h3>
+                            <div class="questions__card-text-wrap">
+                                <p class="questions__card-text main-text">Выбирайте нужную категорию и получайте заказы прямо в телеграмм</p>
+                            </div>
+                            <!-- /.questions__card-text-wrap -->
+                            <div class="questions__card-icon">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9204 5.45125L2.38112 16.9905L0.167565 14.7769L11.7068 3.2377L1.2736 3.2377L1.27508 0.107734L17.0503 0.107733L17.0503 15.883L13.9204 15.8845V5.45125Z" fill="#303030"/>
+                                </svg>                            
+                            </div>
+                        </div>
+                        <!-- /.questions__card -->
+                        <div class="questions__card">
+                            
+                            <h3 class="questions__card-title">Придумать что-нибудь возможно</h3>
+                            <div class="questions__card-text-wrap">
+                                <p class="questions__card-text main-text">Выбирайте нужную категорию и получайте заказы прямо в телеграмм</p>
+                            </div>
+                            <!-- /.questions__card-text-wrap -->
+                            <div class="questions__card-icon">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9204 5.45125L2.38112 16.9905L0.167565 14.7769L11.7068 3.2377L1.2736 3.2377L1.27508 0.107734L17.0503 0.107733L17.0503 15.883L13.9204 15.8845V5.45125Z" fill="#303030"/>
+                                </svg>                            
+                            </div>
+                        </div>
+                        <!-- /.questions__card -->
+        
+                        <div class="questions__card">
+                            <h3 class="questions__card-title">Что о нас говорят наши клиенты</h3>
+                            <div class="questions__card-text-wrap">
+                                <p class="questions__card-text main-text">Выбирайте нужную категорию и получайте заказы прямо в телеграмм</p>
+                            </div>
+                            <!-- /.questions__card-text-wrap -->
+                            <div class="questions__card-icon">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9204 5.45125L2.38112 16.9905L0.167565 14.7769L11.7068 3.2377L1.2736 3.2377L1.27508 0.107734L17.0503 0.107733L17.0503 15.883L13.9204 15.8845V5.45125Z" fill="#303030"/>
+                                </svg>                            
+                            </div>
+                        </div>
+                        <!-- /.questions__card -->
+                         
+            </div>
+            <!-- /.questions__cards -->
+
+        </div>
+        <!-- /.questions -->
+
+
+        <section class="real-projects section container">
+            <div class="real-projects__heading">
+                <span class="real-projects__sub">МЕДИА</span>
+                <h2 class="real-projects__title section-title">Реальные проекты <span class="accent">изнутри</span></h2>
+            </div>
+            <!-- /.real-projects__heading -->
+            <div class="real-projects__swiper swiper">
+                <div class="swiper-wrapper">
+                    <a href="#" class="cases__card swiper-slide">
+                        <div class="cases__card-tags">
+                            <span class="cases__card-tag">Дизайн</span>
+                            <span class="cases__card-tag">Frontend</span>
+                            <span class="cases__card-tag">Одностраничный магазин</span>
+                            <span class="cases__card-tag">Quiz</span>
+                        </div>
+                        <!-- /.cases__card-tags -->
+
+                        <div class="cases__card-content">
+                            <div class="cases__card-info">
+                                <h3 class="cases__card-title">Yolva project industrial design</h3>
+                            </div>
+                            <!-- /. cases__card-content -->
+
+                            <div class="cases__link-arrow">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1601 5.68428L2.62089 17.2235L0.407342 15.01L11.9466 3.47073L1.51338 3.47073L1.51486 0.340766L17.2901 0.340765L17.2901 16.116L14.1601 16.1175V5.68428Z" fill="#313131"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- /.cases__card-content -->
+                        <img src="./img/corporate-projects01.png" alt="cut-go" class="cases__card-img">
+                    </a>
+                    <!-- /.cases__card swiper-slide -->
+
+                    <a href="#" class="cases__card swiper-slide">
+                        <div class="cases__card-tags">
+                            <span class="cases__card-tag">Маркетинг</span>
+                            <span class="cases__card-tag">Frontend</span>
+                            <span class="cases__card-tag">Реклама </span>
+                            <span class="cases__card-tag">Quiz</span>
+                        </div>
+                        <!-- /.cases__card-tags -->
+
+                        <div class="cases__card-content">
+                            <div class="cases__card-info">
+                                <h3 class="cases__card-title">Yolva project industrial design</h3>
+                            </div>
+                            <!-- /. cases__card-content -->
+
+                            <div class="cases__link-arrow">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1601 5.68428L2.62089 17.2235L0.407342 15.01L11.9466 3.47073L1.51338 3.47073L1.51486 0.340766L17.2901 0.340765L17.2901 16.116L14.1601 16.1175V5.68428Z" fill="#313131"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- /.cases__card-content -->
+                        <img src="./img/corporate-projects02.png" alt="cut-go" class="cases__card-img">
+                    </a>
+                    <!-- /.cases__card swiper-slide -->
+
+                    <a href="#" class="cases__card swiper-slide">
+                        <div class="cases__card-tags">
+                            <span class="cases__card-tag">Дизайн</span>
+                            <span class="cases__card-tag">Frontend</span>
+                            <span class="cases__card-tag">Одностраничный магазин</span>
+                            <span class="cases__card-tag">Quiz</span>
+                        </div>
+                        <!-- /.cases__card-tags -->
+
+                        <div class="cases__card-content">
+                            <div class="cases__card-info">
+                                <h3 class="cases__card-title">Yolva project industrial design</h3>
+                            </div>
+                            <!-- /. cases__card-content -->
+
+                            <div class="cases__link-arrow">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1601 5.68428L2.62089 17.2235L0.407342 15.01L11.9466 3.47073L1.51338 3.47073L1.51486 0.340766L17.2901 0.340765L17.2901 16.116L14.1601 16.1175V5.68428Z" fill="#313131"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- /.cases__card-content -->
+                        <img src="./img/corporate-projects03.png" alt="cut-go" class="cases__card-img">
+                    </a>
+                    <!-- /.cases__card swiper-slide -->
+
+                    <a href="#" class="cases__card swiper-slide">
+                        <div class="cases__card-tags">
+                            <span class="cases__card-tag">Дизайн</span>
+                            <span class="cases__card-tag">Frontend</span>
+                            <span class="cases__card-tag">Одностраничный магазин</span>
+                            <span class="cases__card-tag">Quiz</span>
+                        </div>
+                        <!-- /.cases__card-tags -->
+
+                        <div class="cases__card-content">
+                            <div class="cases__card-info">
+                                <h3 class="cases__card-title">Yolva project industrial design</h3>
+                            </div>
+                            <!-- /. cases__card-content -->
+
+                            <div class="cases__link-arrow">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1601 5.68428L2.62089 17.2235L0.407342 15.01L11.9466 3.47073L1.51338 3.47073L1.51486 0.340766L17.2901 0.340765L17.2901 16.116L14.1601 16.1175V5.68428Z" fill="#313131"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- /.cases__card-content -->
+                        <img src="./img/corporate-projects02.png" alt="cut-go" class="cases__card-img">
+                    </a>
+                    <!-- /.cases__card swiper-slide -->
+                </div>
+                <div class="real-projects__footer">
+                    <div class="swiper-pagination"></div>
+                    <a href="./404.html" class="real-projects__link section-link">
+                        <span class="section-link__text">Подробнее о компании</span>
+                        <span class="section-link__icon"></span>
+                    </a>
+                </div>
+                <!-- /.real-projects__footer -->
+
+            </div>
+
+        </section>
+        <!-- /.corporate-projects -->
+
+        <section class="reviews section" id="reviews">
+            <div class="reviews__heading container">
+                <span class="reviews__sub section-sub">Отзывы</span>
+                <div class="reviews__title-wrap">
+                    <h2 class="reviews__title section-title">Что говорят <span class="accent">о&nbsp;нас?</span></h2>
+                </div>
+                <!-- /.reviews__title-wrap -->
+            </div>
+            <!-- /.reviews__heading -->
+            
+            <!-- SLIDER -->
+
+            <div class="swiper reviews-swiper">
+                <div class="swiper-wrapper">
+                    <div class="reviews__slide swiper-slide">
+                        <div class="reviews__slide-stars">
+                            <div class="reviews__slide-star reviews__slide-star--light"></div>
+                            <div class="reviews__slide-star reviews__slide-star--light"></div>
+                            <div class="reviews__slide-star reviews__slide-star--light"></div>
+                            <div class="reviews__slide-star reviews__slide-star--light"></div>
+                            <div class="reviews__slide-star reviews__slide-star--dark"></div>
+                        </div>
+                        <!-- /.reviews__slide-stars -->
+                        <div class="reviews__slide-icon"></div>
+                        <span class="reviews__slide-service">UX/UI сайта</span>
+                        <p class="reviews__slide-text main-text">Отличная команда разработчиков, справились с поставленой задачей на 110%, была разработана с ноля под ключ корпоративная платформа для нашей компании.</p>
+                        
+                        <div class="reviews__slide-footer">
+                            <span class="reviews__slide-name">Анастасия Суханова</span>
+                            <span class="reviews__slide-post">директор по маркетингу компании “технолид”</span>
+                        </div>
+                        <!-- /.reviews__slide-footer -->
+                        <div class="reviews__slide-img-wrap">
+                            <img src="./img/reviews-slide-img01.png" alt="" class="reviews__slide-img">
+                        </div>
+                    </div>
+                    <div class="reviews__slide swiper-slide">
+                        <div class="reviews__slide-icon"></div>
+                        <span class="reviews__slide-service">BackEnd</span>
+                        <div class="reviews__slide-stars">
+                            <div class="reviews__slide-star reviews__slide-star--light"></div>
+                            <div class="reviews__slide-star reviews__slide-star--light"></div>
+                            <div class="reviews__slide-star reviews__slide-star--light"></div>
+                            <div class="reviews__slide-star reviews__slide-star--light"></div>
+                            <div class="reviews__slide-star reviews__slide-star--dark"></div>
+                        </div>
+                        <!-- /.reviews__slide-stars -->
+                        <p class="reviews__slide-text main-text">Используем одни из самых современных и лучших  CMS — Prismic и Stapi.</p>
+                        
+                        <div class="reviews__slide-footer">
+                            <span class="reviews__slide-name">Виктор Журавлев</span>
+                            <span class="reviews__slide-post">директор по маркетингу компании “технолид”</span>
+                        </div>
+                        <!-- /.reviews__slide-footer -->
+                        <div class="reviews__slide-img-wrap">
+                            <img src="./img/reviews-slide-img02.png" alt="" class="reviews__slide-img">
+                        </div>
+                    </div>
+                    <div class="reviews__slide swiper-slide">
+                        <div class="reviews__slide-icon"></div>
+                        <span class="reviews__slide-service">FrontEnd</span>
+                        <div class="reviews__slide-stars">
+                            <div class="reviews__slide-star reviews__slide-star--light"></div>
+                            <div class="reviews__slide-star reviews__slide-star--light"></div>
+                            <div class="reviews__slide-star reviews__slide-star--light"></div>
+                            <div class="reviews__slide-star reviews__slide-star--light"></div>
+                            <div class="reviews__slide-star reviews__slide-star--dark"></div>
+                        </div>
+                        <!-- /.reviews__slide-stars -->
+                        <p class="reviews__slide-text main-text">Также мы можем подключить любую удобную для вас CMS-систему.</p>
+                        
+                        <div class="reviews__slide-footer">
+                            <span class="reviews__slide-name">Виктор Журавлев</span>
+                            <span class="reviews__slide-post">директор по маркетингу компании “технолид”</span>
+                        </div>
+                        <!-- /.reviews__slide-footer -->
+                        <div class="reviews__slide-img-wrap">
+                            <img src="./img/reviews-slide-img01.png" alt="" class="reviews__slide-img">
+                        </div>
+                    </div>
+                    <div class="reviews__slide swiper-slide">
+                        <div class="reviews__slide-icon"></div>
+                        <span class="reviews__slide-service">UX/UI сайта</span>
+                        <div class="reviews__slide-stars">
+                            <div class="reviews__slide-star reviews__slide-star--light"></div>
+                            <div class="reviews__slide-star reviews__slide-star--light"></div>
+                            <div class="reviews__slide-star reviews__slide-star--light"></div>
+                            <div class="reviews__slide-star reviews__slide-star--light"></div>
+                            <div class="reviews__slide-star reviews__slide-star--dark"></div>
+                        </div>
+                        <!-- /.reviews__slide-stars -->
+                        <p class="reviews__slide-text main-text">Отличная команда разработчиков, справились с поставленой задачей на 110%, была разработана с ноля под ключ корпоративная платформа для нашей компании.</p>
+                        
+                        <div class="reviews__slide-footer">
+                            <span class="reviews__slide-name">Анастасия Суханова</span>
+                            <span class="reviews__slide-post">директор по маркетингу компании “технолид”</span>
+                        </div>
+                        <!-- /.reviews__slide-footer -->
+                        <div class="reviews__slide-img-wrap">
+                            <img src="./img/reviews-slide-img02.png" alt="" class="reviews__slide-img">
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- /.reviews -->
+
+        <section class="feedback section container">
+            <div class="feedback__heading">
+                <span class="feedback__sub section-sub">Наши услуги</span>
+                <div class="feedback__title-wrap">
+                    <h2 class="feedback__title section-title section-title--star">Готовы к чудесам? Тогда вперед!</h2>
+                </div>
+                <!-- /.feedback__title-wrap -->
+            </div>
+            <!-- /.feedback__heading -->
+            
+            <div class="feedback__content">
+
+                <div class="feedback__tags-wrap">
+                    <span class="feedback__tags-title">digital-решение для вашего бизнеса под ключ</span>
+
+                    <div class="feedback__tags">
+                        <a href="./404.html" class="feedback__tag">Дизайн</a>
+                        <a href="./404.html" class="feedback__tag">Frontend</a>
+                        <a href="./404.html" class="feedback__tag">Backend</a>
+                        <a href="./404.html" class="feedback__tag">Quiz</a>
+                        <a href="./404.html" class="feedback__tag">Одностраничный магазин</a>
+                        <a href="./404.html" class="feedback__tag">Многостраничный сайт</a>
+                        <a href="./404.html" class="feedback__tag">Quiz</a>
+                        <a href="./404.html" class="feedback__tag">Многостраничный сайт</a>
+                        <a href="./404.html" class="feedback__tag">Дизайн</a>
+                        <a href="./404.html" class="feedback__tag">Quiz</a>
+                        <a href="./404.html" class="feedback__tag">Backend</a>
+                    </div>
+                    <!-- /.feedback__tags -->
+                </div>
+                <!-- /.feedback__tags-wrap -->
+
+                <form action="#" class="feedback__form">
+                    <div class="feedback__main-inputs">
+                        <input type="text" class="feedback__input" type="text" placeholder="Имя*" required>
+                        <input type="text" class="feedback__input" type="email" placeholder="Email*" required>
+                        <input type="text" class="feedback__input" type="tel" placeholder="Телефон*" required>
+                        <input type="text" class="feedback__input" type="text" placeholder="Компания">
+                    </div>
+                    <!-- /.feedback__main-inputs -->
+
+                    <div class="feedback__textarea-wrap">
+                        <textarea class="feedback__input feedback__textarea" placeholder="Опишите вашу задачу"></textarea>
+                        <label for="feedbackFile" class="feedback__file-button">Прикрепите файл</label>
+                        <input type="file" id="feedbackFile" hidden>
+                    </div>
+                    <!-- /.feedback__textarea-wrap -->
+
+                    <div class="feedback__budget-wrap">
+                        <span class="feedback__budget-title">Ваш бюджет</span>
+
+                        <div class="feedback__budget-input-wrap">
+                            <input type="range" class="feedback__budget-input" min="0" max="100" value="50" step="0.01">
+
+                            <div class="feedback__budget-line"></div>
+
+                            <div class="feedback__budget-dot"></div>
+                            <span class="feedback__budget-sum">1 000 000 ₽</span>
+                        </div>
+                        <!-- /.feedback__budget-input-wrap -->
+
+                    </div>
+                    <!-- /.feedback__budget-wrap -->
+
+                    <div class="feedback__form-footer">
+                        <label for="feedbackPolicy" class="feedback__policy">
+                            <input type="checkbox" id="feedbackPolicy" class="feedback__policy-checkbox" name="feedbackPolicy" required>
+                            <div class="feedback__policy-checkbox-custom"></div>
+                            <span class="feedback__policy-text">Даю своё согласие на обработку <a href="./404.html" class="feedback__policy-text-link">персональных данных</a></span>
+                        </label>
+                        <!-- /.feedback__policy -->
+                        <button class="feedback__form-button section-link">
+                            <span class="section-link__text">Отправить</span>
+                            <span class="section-link__icon"></span>
+                        </button>
+                    </div>
+                    <!-- /.feedback__form-footer -->
+                </form>
+                 
+            </div>
+            <!-- /.feedback__content -->
+        </section>
+        <!-- /.feedback -->
+        
+
+        <footer class="footer section">
+            <div class="container">
+                <div class="footer__heading row between-xs container">
+                    <div class="footer__logos">
+                        <a href="#" class="footer__logo-link"><img src="./img/footer-logo.svg" alt="" class="footer__logo-img"></a>
+                        <a href="#" class="footer__logo-link"><img src="./img/3l.svg" alt="" class="footer__logo-img"></a>
+                        <a href="#" class="footer__logo-link"><img src="./img/muchi.png" alt="" class="footer__logo-img"></a>
+                        <a href="#" class="footer__logo-link"><img src="./img/elva.png" alt="" class="footer__logo-img"></a>
+                    </div>
+                    <!-- /.footer__logos -->
+    
+                    <div class="footer__location col-md-3 col-md-offset-2">
+                        <h3 class="footer__location-title">Головной офис</h3>
+                        <span class="footer__location-text">Адрес: 140180, Московская область г.&nbsp;Жуковский, ул. Молодежная, д. 21А, оф. 1</span>
+                    </div>
+                    <!-- /.footer__location -->
+    
+                    <div class="footer__contacts col-xs-7 col-sm-5 col-md-3">
+                        <div class="footer__socials">
+                            <a href="#" class="footer__socials-link"><img src="./img/hh.svg" alt="" class="footer__socials-img"></a>
+                            <a href="#" class="footer__socials-link"><img src="./img/h.svg" alt="" class="footer__socials-img"></a>
+                            <a href="#" class="footer__socials-link"><img src="./img/vk.png" alt="" class="footer__socials-img"></a>
+                            <a href="#" class="footer__socials-link"><img src="./img/telegram.svg" alt="" class="footer__socials-img"></a>
+                            <a href="#" class="footer__socials-link"><img src="./img/youtube.png" alt="" class="footer__socials-img"></a>
+                        </div>
+                        <!-- /.footer__socials -->
+                        <div class="footer__contacts-links">
+                            <a href="#" class="footer__contacts-link">Телефон: +7 (915) 281-63-22</a>
+                            <a href="#" class="footer__contacts-link">E-mail: zakaz@code-x.website</a>
+                        </div>
+                        <!-- /.footer__contacts-links -->
+                    </div>
+                    <!-- /.footer__contacts -->
+    
+                </div>
+                <!-- /.footer__heading row container -->
+    
+                <div class="footer__nav row between-md start-lg">
+                    <div class="footer__nav-block col-lg-5">
+                        <h3 class="footer__nav-title">Услуги</h3>
+                        <nav class="footer__nav-links">
+                            <a href="#" class="footer__nav-link">Внедрение CRM Bitrix24</a>
+                            <a href="#" class="footer__nav-link">Разработка чат-бота</a>
+                            <a href="#" class="footer__nav-link">Разработка порталов LMS</a>
+                            <a href="#" class="footer__nav-link">Парсинг данных</a>
+                            <a href="#" class="footer__nav-link">Разработка интерактивных 3d сайтов</a>
+                            <a href="#" class="footer__nav-link">Решения на базе AI</a>
+                            <a href="#" class="footer__nav-link">Веб-разработка</a>
+                            <a href="#" class="footer__nav-link">Мобильная разработка</a>
+                            <a href="#" class="footer__nav-link">Разработка интерактивного 3D ассистента для сайта</a>
+                            <a href="#" class="footer__nav-link">Разработка онлайн сервисов</a>
+                            <a href="#" class="footer__nav-link">DevOps</a>
+                            <a href="#" class="footer__nav-link">IT-аудит</a>
+                            <a href="#" class="footer__nav-link">Digital-маркетинг</a>
+                            <a href="#" class="footer__nav-link">SEO</a>
+                            <a href="#" class="footer__nav-link">SMM</a>
+
+                        </nav>
+                        <!-- /.footer__nav-links -->
+                    </div>
+                    <!-- /.footer__nav-block -->
+                    
+                    <div class="footer__nav-block col-lg-2">
+                        <h3 class="footer__nav-title">Кейсы</h3>
+                        <nav class="footer__nav-links">
+                            <a href="#" class="footer__nav-link">Структура</a>
+                            <a href="#" class="footer__nav-link">Контакты</a>
+                            <a href="#" class="footer__nav-link">Партнеры</a>
+                            <a href="#" class="footer__nav-link">Карьера</a>
+                        </nav>
+                        <!-- /.footer__nav-links -->
+                    </div>
+                    <!-- /.footer__nav-block -->
+                    
+                    <div class="footer__nav-block col-lg-2">
+                        <h3 class="footer__nav-title">О компании</h3>
+                        <nav class="footer__nav-links">
+                            <a href="#" class="footer__nav-link">Структура</a>
+                            <a href="#" class="footer__nav-link">Контакты</a>
+                            <a href="#" class="footer__nav-link">Партнеры</a>
+                            <a href="#" class="footer__nav-link">Карьера</a>
+                        </nav>
+                        <!-- /.footer__nav-links -->
+                    </div>
+                    <!-- /.footer__nav-block -->
+                    
+                    <div class="footer__nav-block col-lg-2">
+                        <h3 class="footer__nav-title">Медиа</h3>
+                        <nav class="footer__nav-links">
+                            <a href="#" class="footer__nav-link">Новости</a>
+                            <a href="#" class="footer__nav-link">Мероприятия</a>
+                            <a href="#" class="footer__nav-link">СМИ о нас</a>
+                            <a href="#" class="footer__nav-link">Статьи</a>
+                        </nav>
+                        <!-- /.footer__nav-links -->
+                    </div>
+                    <!-- /.footer__nav-block -->
+                    
+                </div>
+                <!-- /.footer__nav -->
+    
+                <div class="footer__info row between-sm middle-xs">
+                    <div class="footer__info-company">
+                        <span class="footer__info-text">© 2018-2025.  Code-x web development.</span>
+                        <span class="footer__info-text">Все права защищены.</span>
+                        <span class="footer__info-text">ИНН: 9875483 ОГРН: 9248753485</span>
+                    </div>
+                    <!-- /.footer__info-company -->
+                    <a href="#" class="footer__info-link footer__info-text">Политика обработки персональных данных</a>
+                    <a href="#" class="footer__info-link footer__info-text">Файлы cookie</a>
+                    <a href="#" class="footer__info-social"></a>
+                </div>
+                <!-- /.footer__info -->
+
+            </div>
+            <!-- /.container -->
+
+        </footer>
+        <!-- /.footer -->
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,143 @@
+.technologies {
+    @include flex-start-between;
+
+    &__cards {
+        max-width: 270px;
+        width: 100%;
+        display: grid;
+        row-gap: 10px;
+
+        &:nth-child(2) {
+            .technologies__card {
+                height: 150px;
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .technologies__card-title {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__card {
+        width: 100%;
+        background-color: $dark;
+        padding: 25px;
+        border-radius: $border-radius;
+    }
+
+    &__card-icon {
+        width: 24px;
+        height: 28px;
+        background: url("../img/lock-accent.svg") no-repeat center / cover;
+    }
+
+    &__card-title {
+        margin-top: 75px;
+        font-size: 30px;
+        line-height: 120%;
+    }
+
+    &__card-text {
+        margin-top: 10px;
+        color: #B3B3B3;
+        font-family: "Roboto Flex";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 0.48px;
+    }
+
+    &__content {
+        @include column;
+    }
+
+    // &__heading {
+    // }
+
+    // &__title {
+    // }
+
+    &__info {
+        max-width: 735px;
+        margin-top: 37px;
+    }
+
+    &__content-cards {
+        margin-top: 94px;
+        width: 100%;
+        display: grid;
+        row-gap: 10px;
+    }
+
+    &__content-card {
+        width: 100%;
+        background-color: $dark;
+        border-radius: $border-radius;
+        padding: 35px 50px;
+    }
+
+    &__content-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__cotent-item {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__content-num {
+        font-family: "Roboto Flex";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 0.48px;
+        display: flex;
+        margin-right: 20px;
+        transform: translateY(3px);
+    }
+
+}
+
+// 1024px: стек карточек над контентом
+@include media('tablet-landscape') {
+    .technologies {
+        flex-direction: column;
+
+        &__cards { max-width: none; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 10px; }
+        &__content { max-width: 100%; }
+    }
+}
+
+// 768px: одна колонка карточек
+@include media('mobile-landscape') {
+    .technologies {
+        &__cards { grid-template-columns: 1fr; }
+        &__content-card { padding: 28px 28px; }
+        &__card-title { margin-top: 50px; font-size: 24px; }
+        &__card-text { font-size: 18px; }
+        // заголовки и ссылки — в колонку
+        &__heading { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+    }
+}
+
+// 586px: уменьшить отступы
+@include media('mobile-wide-586') {
+    .technologies { &__content-card { padding: 22px; } }
+}
+
+// 425px: компакт
+@include media('mobile-425') {
+    .technologies { &__content-card { padding: 18px; } }
+}
+
+// 320px: минимум
+@include media('mobile-320') {
+    .technologies { &__content-card { padding: 16px; } }
+}

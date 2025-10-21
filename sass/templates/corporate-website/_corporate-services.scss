@@ -1,0 +1,112 @@
+.corporate-services {
+
+    &__heading {
+        @include flex-start-between;
+        gap: 20px;
+    }
+
+    &__title {
+        max-width: 680px;
+    }
+
+    &__info-wrap {
+        @include column;
+    }
+
+    &__info {
+        max-width: 537px;
+    }
+
+    &__cards {
+        margin-top: 69px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    &__card {
+        position: relative;
+        background: rgba(255, 255, 255, 0.03);
+        min-height: 495px;
+        align-self: stretch;
+        padding: 40px;
+        border-radius: $border-radius;
+        text-decoration: none;
+
+        @for $i from 1 through 3 {
+            &:nth-child(#{2 * $i - 1}) {
+                background: rgba(255, 255, 255, 0.03) url("../img/services-card#{$i}.png") no-repeat bottom 40px left 40px;
+            }
+        }
+
+        &:hover > .corporate-services__card-arrow {
+            border: 1px solid rgba($light, 1);
+            background-color: rgba(#0D0D0D, 1);
+    
+            & path {
+                fill: rgba($light, 1);
+            } 
+        }
+
+    }
+
+    &__card-title {
+        color: $light;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    &__card-text {
+        margin-top: 21px;
+    }
+
+    &__card-arrow {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 90px;
+        min-height: 90px;
+        border-radius: 50%;
+        border: 1px solid rgba($light, 0.2);
+        transition: border 0.2s ease-in-out;
+        background-color: rgba(#0D0D0D, 0);
+        transition: all 0.2s ease-in-out;
+  
+        & path {
+          fill: rgba($light, 0.2);
+          transition: fill 0.2s ease-in-out;
+        }
+    }
+}
+
+// 1024px: 3 -> 2 колонки
+@include media('tablet-landscape') {
+    .corporate-services {
+        &__heading { flex-direction: column; align-items: flex-start; gap: 16px; }
+        &__cards { grid-template-columns: repeat(2, 1fr); }
+        &__card { min-height: 440px; }
+    }
+}
+
+// 768px: 1 колонка, компактные карточки
+@include media('mobile-landscape') {
+    .corporate-services {
+        &__cards { grid-template-columns: 1fr; }
+        &__card { min-height: 380px; padding: 28px; }
+        &__card-title { font-size: 26px; }
+        &__card-arrow { min-width: 72px; min-height: 72px; bottom: 28px; right: 28px; }
+    }
+}
+
+// 586px: ещё плотнее
+@include media('mobile-wide-586') {
+    .corporate-services {
+        &__card { min-height: 340px; padding: 22px; }
+        &__card-title { font-size: 24px; }
+        &__card-arrow { min-width: 60px; min-height: 60px; bottom: 22px; right: 22px; }
+    }
+}

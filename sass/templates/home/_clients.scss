@@ -1,0 +1,102 @@
+.clients {
+    @include flex-center-between;
+    gap: 40px;
+    
+    &__cards-wrap {
+        @include flex-center-center;
+        gap: 10px;
+        height: 760px;
+        overflow: hidden;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__card {
+        @include flex-center-center;
+        width: 376px;
+        height: 188px;
+        border-radius: 22px;
+        border: 1px solid #1E1E1E;
+    }
+
+    &__card-img {
+        max-width: 230px;
+        max-height: 90px;
+        object-fit: contain;
+    }
+
+    &__content {
+        @include column;
+        gap: 10px;
+    }
+
+    &__title {
+        max-width: 290px;
+    }
+
+    &__texts {
+        margin-top: 50px;
+        display: flex;
+        align-items: flex-start;
+        gap: 45px;
+    }
+
+    &__text {
+        max-width: 415px;
+        color: #515151;
+    }
+
+    &__link {
+        margin-top: 90px;
+    }
+}
+
+// 1240px: уменьшить высоты/ширины карточек
+@include media('desktop-1240') {
+    .clients {
+        &__cards-wrap { height: 640px; }
+        &__card { width: 320px; height: 160px; }
+    }
+}
+
+// 1024px: стек — логотипы сверху, контент ниже
+@include media('tablet-landscape') {
+    .clients {
+        flex-direction: column;
+        align-items: stretch;
+        &__cards-wrap { order: 1; }
+        &__content { order: 2; max-width: 100%; }
+    }
+}
+
+// 768px: 2-колоночная сетка логотипов
+@include media('mobile-landscape') {
+    .clients {
+        &__cards { display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 10px; row-gap: 10px; }
+        &__card { width: 100%; }
+        // заголовок + ссылка — в колонку
+        &__title { max-width: 100%; }
+        &__content { gap: 16px; }
+    }
+}
+
+// 586px и ниже: 1 колонка
+@include media('mobile-wide-586') {
+    .clients {
+        &__cards { grid-template-columns: 1fr; }
+    }
+}
+
+// 425px: компактные карточки
+@include media('mobile-425') {
+    .clients { &__card { height: 140px; } }
+}
+
+// 320px: минимум
+@include media('mobile-320') {
+    .clients { &__card { height: 120px; } }
+}

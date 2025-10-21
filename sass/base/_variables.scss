@@ -1,0 +1,85 @@
+// ПЕРЕМЕННЫЕ
+
+$light: #fff;
+$accent: #14CF93;
+$dark: rgba(255, 255, 255, 0.03);
+
+$desktop-width: 1920px;    // Ширина viewport
+$container: 1720px;        // Желаемая ширина контейнера
+
+$border-radius: 15px;
+$projects-thumb: 125px;
+
+
+// РАЗМЕРЫ ЭКРАНОВ ДЛЯ АДАПТАЦИИ
+
+$breakpoints: (
+  'desktop-large': 1600px,    // Широкие экраны (больше 1440px)
+  'desktop': 1440px,          // Стандартные десктопы
+  'laptop-large': 1366px,     // Большие ноутбуки
+  'desktop-1240': 1240px,     // Промежуточный десктоп
+  'laptop': 1200px,           // Стандартные ноутбуки
+  'tablet-landscape': 1024px, // Планшеты (альбомная ориентация)
+  'tablet': 992px,            // Планшеты
+  'mobile-landscape': 768px,  // Смартфоны (альбомные) / планшеты (портретные)
+  'mobile': 576px,            // Смартфоны
+  'mobile-wide-586': 586px,   // Доп. брейкпоинт под запрос
+  'mobile-425': 425px,        // Смартфоны 425px
+  'mobile-320': 320px,        // Минимальные смартфоны 320px
+  'mobile-small': 480px,      // Мелкие смартфоны (ваша точка)
+  'mobile-tiny': 360px        // Очень мелкие смартфоны
+);
+
+
+// МИКСИНЫ
+
+@mixin flex-start-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@mixin flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-end-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@mixin flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin column {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 50%;
+  width: 100%;
+}
+
+// МИКСИН ДЛЯ МЕДИА ЗАПРОСОВ (АДАПТАЦИЯ)
+
+@mixin media($breakpoint) {
+  @if not map-has-key($breakpoints, $breakpoint) {
+    @error "Брейкпоинт '#{$breakpoint}' не найден. Доступные: #{map-keys($breakpoints)}";
+  }
+  
+  $width: map-get($breakpoints, $breakpoint);
+  @media (max-width: $width) {
+    @content;
+  }
+}

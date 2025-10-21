@@ -1,0 +1,140 @@
+.promo {
+    @include flex-end-between;
+    gap: 40px;
+    margin-top: 20px;
+    background: $dark;
+    border-radius: 15px;
+    padding: 52px;
+
+    &__content {
+        max-width: 765px;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__info {
+        @include flex-start-between;
+        gap: 20px;
+    }
+
+    &__info-text {
+        max-width: 375px;
+    }
+
+    &__button {
+        margin-top: 150px;
+        padding: 22px 55px;
+        font-weight: 700;
+        border-radius: 5px;
+        font-size: 16px;
+        color: $accent;
+        background: #2A2A2A;
+        border: none;
+        text-transform: uppercase;
+        transition: all 0.2s ease;
+        cursor: pointer;
+
+        &:hover {
+            background: $accent;
+            color: $light;
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
+    }
+
+    &__slider-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    &__slide {
+        width: 667px;
+        height: 667px;
+    }
+
+    &__slide-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scaleX(-1);
+    }
+
+    &__slider-bullets {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__slider-bullet {
+        width: 8px;
+        height: 8px;
+        border-radius: 100px;
+        background: #525662;
+        border: none;
+        cursor: pointer;
+
+        &--active {
+            width: 22px;
+            background: $accent;
+        }
+    }
+
+    // 1240px: уменьшить слайд и паддинги
+    @include media('desktop-1240') {
+        padding: 40px;
+        gap: 32px;
+
+        &__slide {
+            width: 560px;
+            height: 560px;
+        }
+    }
+
+    // 1024px: колонка, слайд под текстом
+    @include media('tablet-landscape') {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 28px;
+
+        &__button { margin-top: 40px; }
+
+        &__slider-wrap { align-items: center; }
+
+        &__slide {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+        }
+    }
+
+    // 768px: еще плотнее
+    @include media('mobile-landscape') {
+        padding: 28px;
+        gap: 24px;
+
+        &__info { flex-direction: column; gap: 12px; }
+        &__button { margin-top: 40px; }
+    }
+
+    // 586px: компактные боковые поля
+    @include media('mobile-wide-586') {
+        padding: 20px;
+    }
+
+    // 425px: плотные отступы
+    @include media('mobile-425') {
+        padding: 16px;
+    }
+
+    // 320px: минимальные отступы
+    @include media('mobile-320') {
+        padding: 12px;
+    }
+}

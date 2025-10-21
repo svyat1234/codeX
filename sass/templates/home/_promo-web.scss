@@ -1,0 +1,94 @@
+.promo-web {
+    margin-top: 20px;
+    padding: 90px 90px 75px 90px;
+    background: url("../img/grid.svg") no-repeat center / cover, rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    &__title {
+      font-family: "Geist", sans-serif;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    &__info {
+      display: flex;
+      margin-top: 40px;
+      font-family: "Geist", sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.48px;
+    }
+    &__cards {
+      margin-top: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+    &__card {
+      max-width: 415px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      border-radius: 7px;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      background: rgba(46, 46, 46, 0.80);
+      &-img {
+        margin-right: 20px;
+      }
+      &-text {
+        font-family: "Geist", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: 0.48px;
+      }
+    }
+    &__link {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 255px;
+      width: 100%;
+      height: 54px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      color: #14CF93;
+      text-decoration: none;
+      font-family: "Geist", sans-serif;
+      font-size: 12px;
+      line-height: 110%;
+      letter-spacing: 0.48px;
+      text-transform: uppercase;
+    }
+    &__slider {
+      width: 100%;
+      height: 450px;
+      border-radius: 7px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(46, 46, 46, 0.80);
+      &-wrap {
+        width: 100%;
+      }
+      &-bullets {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+      }
+      &-bullet {
+        width: 8px;
+        height: 8px;
+        border-radius: 30px;
+        border: 1px solid #525662;
+        cursor: pointer;
+      }
+    }
+  }

@@ -1,0 +1,153 @@
+.contacts {
+    margin-top: 100px;
+
+    .contacts__title-wrap {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__title {
+        @include column;
+    }
+
+    &__wrapper {
+        @include flex-start-between;
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    &__map {
+        height: 547px;
+        padding: 30px;
+        border-radius: $border-radius;
+        background: $dark;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    &__content {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 547px;
+        gap: 20px;
+    }
+
+    &__cards {
+        height: 100%;
+        display: flex;
+        gap: 20px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-height: 100%;
+        height: 100%;
+        border-radius: $border-radius;
+        background: $dark;
+        padding: 30px;
+        gap: 10px;
+
+        &--small {
+            max-width: 270px;
+            width: 100%;
+        }
+
+        &--big {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    &__card-title {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    &__card-link {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1;
+        color: #757575;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $light;
+        }
+    }
+
+    &__socials {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3px;
+        width: fit-content;
+    }
+
+    &__socials-link {
+        width: 48px;
+        height: 48px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+
+            * {
+                transition: all 0.2s ease;
+            }
+        }
+
+        &:hover {
+            rect {
+                stroke-opacity: 1;
+            }
+
+            path {
+                fill: $light;
+            }
+        }
+    }
+
+}
+
+// Адаптация контактов под мобильные устройства (явные @media)
+@media screen and (max-width: 1023px) {
+  .contacts {
+    margin-top: 80px;
+    &__title-wrap { justify-content: flex-start; }
+    &__title { max-width: 100%; }
+    &__wrapper { flex-direction: column; }
+    &__map { height: 420px; }
+    &__content { height: auto; }
+    &__cards { flex-direction: column; }
+    &__card--small { max-width: 100%; }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    margin-top: 60px;
+    &__title-wrap { justify-content: flex-start; }
+    &__title { max-width: 100%; }
+    &__map { height: 360px; padding: 20px; }
+    &__card { padding: 20px; }
+    &__card-title { font-size: 24px; }
+    &__card-link { font-size: 18px; }
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .contacts { &__map { height: 320px; } }
+}
+
+@media screen and (max-width: 425px) {
+  .contacts {
+    margin-top: 40px;
+    &__title-wrap { justify-content: flex-start; }
+    &__title { max-width: 100%; }
+    &__map { height: 280px; }
+  }
+}

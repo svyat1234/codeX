@@ -1,0 +1,92 @@
+.tasks {
+  padding-left: 90px;
+  padding-right: 90px;
+  margin-top: 110px;
+}
+.tasks__sub {
+  color: #14CF93;
+  font-family: "Geist", sans-serif;
+  font-size: 13px;
+  line-height: 110%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.tasks__heading {
+  margin-top: 25px;
+  padding-top: 26px;
+  border-radius: 0px 5px 0px 0px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  padding-right: 90px;
+  margin-bottom: 80px;
+}
+.tasks__title {
+  color: #F6F6F6;
+  font-family: "GolosSemiBold", sans-serif;
+  font-size: 48px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.tasks__heading-link {
+  display: flex;
+  align-items: center;
+  color: #F8AB00;
+  text-decoration: none;
+}
+.tasks__heading-link-text {
+  font-family: "Golos", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.tasks__slider {
+  width: 100%;
+}
+.tasks .swiper-slide {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.tasks__slide {
+  max-width: 293px;
+  padding: 60px 40px;
+  border-radius: 13px;
+  border: 1px solid #424040;
+  background: rgba(255, 255, 255, 0.05);
+}
+.tasks__slide_margin {
+  margin-top: 60px;
+}
+.tasks__slide-title {
+  color: #FFF;
+  font-family: "Golos", sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+.tasks__slide-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+.tasks__slide-link-text {
+  font-family: "Golos", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.1s ease-in-out;
+}
+.tasks__slide-link:hover {
+  color: #14CF93;
+}
+.tasks .swiper {
+  padding-bottom: 60px;
+}

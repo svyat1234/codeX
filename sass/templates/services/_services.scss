@@ -1,0 +1,61 @@
+
+// .services {
+//     margin-top: 150px;
+//     display: grid;
+//     row-gap: 100px;
+//     &-wrap {
+//       margin-top: 50px;
+//     }
+//     &__title {
+//       font-size: 36px;
+//       font-family: 'Geist', sans-serif;
+//       line-height: 100%;
+//     }
+//     &__cards {
+//       margin-top: 30px;
+//       display: grid;
+//       grid-template-columns: repeat(3, 1fr);
+//       gap: 30px;
+//     }
+//     &__card {
+//       position: relative;
+//       background: rgba(255, 255, 255, 0.05);
+//       border: 1px solid #424040;
+//       height: 400px;
+//       padding: 30px;
+//       border-radius: 5px;
+//       &_web {
+//         background: url('../img/services-card.svg') no-repeat bottom / cover;
+//       }
+//       &_design {
+//         background: url('../img/services-card_design.svg') no-repeat bottom / cover;
+//       }
+//       &_marketing {
+//         background: url('../img/services-card_marketing.svg') no-repeat bottom / cover;
+//       }
+//       &-wrap {
+//         padding: 5px;
+//         border: 1px solid #333333;
+//         border-radius: 5px;
+//       }
+//       &-title {
+//         font-size: 23px;
+//         font-family: GeistSemiBold, sans-serif;
+//         line-height: 120%;
+//         font-weight: 500;
+//       }
+//       &-text {
+//         font-size: 20px;
+//         font-family: GeistLight, sans-serif;
+//         line-height: 120%;
+//         margin-top: 10px;
+//         max-width: 80%;
+//       }
+//       &-link {
+//         position: absolute;
+//         bottom: 30px;
+//         right: 30px;
+//         transform: scale(1.5);
+//       }
+//     }
+//   }

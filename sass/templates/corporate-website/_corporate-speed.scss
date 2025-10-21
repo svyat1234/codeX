@@ -1,0 +1,25 @@
+.corporate-speed {
+    
+    &__heading {
+        @include flex-start-between;
+    }
+
+    &__heading-content {
+        @include column
+    }
+
+    &__sub {
+        color: rgba(255, 255, 255, 0.20);
+        font-family: GeistExtraBold, sans-serif;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 110%;
+        text-transform: uppercase;
+    }
+
+    &__info {
+        margin-top: 40px;
+        max-width: 616px;
+    }
+}

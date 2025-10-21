@@ -1,0 +1,132 @@
+.protection-team {
+    margin-top: 20px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+  
+    &__image-wrap {
+        margin-top: -40px;
+        background: url();
+    }
+
+// 1024px: стек изображение/контент
+@include media('tablet-landscape') {
+    .corporate-team {
+        &__content { flex-direction: column; gap: 20px; }
+        &__info { padding: 24px; flex-direction: column; gap: 16px; }
+        &__info-images { margin-right: 0; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+        &__info-heading { flex-direction: column; align-items: flex-start; gap: 12px; }
+        &__info-title { margin-right: 0; }
+        &__info-position { max-width: none; }
+    }
+}
+
+// 768px: уменьшение размеров
+@include media('mobile-landscape') {
+    .corporate-team {
+        &__image { max-width: 100%; }
+        &__info-images { grid-template-columns: repeat(4, 1fr); }
+        &__info-img-wrap { width: 72px; height: 72px; }
+        &__info { padding: 20px; }
+    }
+}
+  
+    &__image {
+        max-width: 417px;
+        width: 100%;
+        height: auto;
+    }
+
+    &__info {
+        max-width: 1140px;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 31px 35px;
+        background: $dark;
+        border-radius: $border-radius;
+    }
+  
+    &__info-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 32px;
+    }
+  
+  
+    &__info-img-wrap {
+        position: relative;
+        width: 112px;
+        height: 112px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        &::after {
+            position: absolute;
+            content: '';
+            display: flex;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #181818;
+        }
+  
+        &_active {
+            &::after {
+                display: none;
+            }   
+        }
+    }
+    
+    &__info-img {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #181818; //Если убрать появляются белая обводка
+  
+        &_active {
+            border: none;
+        }
+    }
+
+    &__info-content {
+        max-width: 850px;
+        width: 100%;
+    }
+
+    &__info-heading {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__info-title {
+        margin-right: 55px;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: 0.48px;
+    }
+
+    &__info-position {
+        color: #6A6A6A;
+        font-family: "Roboto Flex";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0.48px;
+        max-width: 200px;
+    }
+  
+    &__info-text {
+        max-width: 703px;
+        margin-top: 67px;
+    }
+  }

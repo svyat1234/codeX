@@ -1,0 +1,38 @@
+.corporate-cases {
+
+    &__heading {
+        @include flex-start-between;
+    }
+
+    &__sub {
+        color: rgba(255, 255, 255, 0.20);
+        font-family: GeistExtraBold, sans-serif;
+        font-size: 24.707px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 110%;
+        letter-spacing: 0.824px;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        @include column
+    }
+
+    .cases__card:nth-child(4n+1),
+    .cases__card:nth-child(4n) {
+        max-width: 1140px;
+    }
+
+    .cases__card {
+        max-width: 558px;
+
+        $images: 'project01', 'project03', 'project04', 'project02';
+
+        @for $i from 1 through length($images) {
+            &:nth-child(#{$i})::before {
+                background: url('../../../img/#{nth($images, $i)}.png') no-repeat center / cover;
+            }
+        }
+    }
+}

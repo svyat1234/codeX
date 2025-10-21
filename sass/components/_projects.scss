@@ -1,0 +1,60 @@
+.projects {
+
+    &__heading {
+        @include flex-start-between
+    }
+
+    .cases__card {
+        max-width: 32.44%;
+
+        &:nth-child(4n+1),
+        &:nth-child(4n) {
+            max-width: 66.28%;
+        }
+    }
+
+    // 1024px: две колонки
+    @include media('tablet-landscape') {
+        .cases__card {
+            max-width: calc(50% - 10px);
+
+            &:nth-child(4n+1),
+            &:nth-child(4n) {
+                max-width: calc(50% - 10px);
+            }
+        }
+    }
+
+    // 768px: одна колонка
+    @include media('mobile-landscape') {
+        &__heading { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+        .cases__card {
+            max-width: 100%;
+            min-height: 380px;
+        }
+    }
+
+    // 586px и ниже: меньше паддинги и высота
+    @include media('mobile-wide-586') {
+        .cases__card {
+            min-height: 340px;
+            padding: 24px;
+        }
+
+        .cases__card-title { font-size: 32px; }
+        .cases__card-tag { padding: 8px 16px; font-size: 16px; }
+        &__heading { gap: 12px; }
+    }
+
+    // 425px: ещё компактнее
+    @include media('mobile-425') {
+        .cases__card { min-height: 300px; padding: 20px; }
+        .cases__card-title { font-size: 28px; }
+    }
+
+    // 320px: минимум
+    @include media('mobile-320') {
+        .cases__card { padding: 16px; }
+        .cases__card-title { font-size: 26px; }
+    }
+}
