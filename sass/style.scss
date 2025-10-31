@@ -39,11 +39,18 @@
 
 
     // company
+
     @import "templates/company/company-promo";
 
-    // services
+    // cases
 
-    @import "templates/services/services";
+    @import "templates/cases/cases-promo";
+    @import "templates/cases/cases-content";
+
+
+    // case
+
+    @import "templates/case/case-promo";
 
 
     // corporate-website

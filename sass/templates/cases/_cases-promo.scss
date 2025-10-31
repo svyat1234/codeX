@@ -1,0 +1,78 @@
+.cases-promo {
+    position: relative;
+    margin-top: 20px;
+    padding: 45px 48px 50px 48px;
+    border-radius: $border-radius;
+    overflow: hidden;
+    
+    &__heading {
+        @include flex-start-between;
+        margin-top: 79px;
+    }
+
+    &__info {
+        display: flex;
+        gap: 52px;
+        margin-right: 36px;
+    }
+
+    &__info-text {
+        max-width: 378px;
+    }
+
+    &__filters {
+        margin-top: 160px;
+        gap: 26px;
+    }
+
+    &__filters-buttons {
+        display: flex;
+        gap: 5px;
+    }
+
+    &__filters-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: $accent url(../img/cases-promo-filter-icon.svg) no-repeat center;
+    }
+
+    &__filters-button {
+        height: 50px;
+        padding: 0 30px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 700;
+        background: #75757526;
+        border: none;
+        color: $light;
+        cursor: pointer;
+    }
+
+    &__filters-list {
+        margin-top: 22px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    &__filters-item {
+        height: 50px;
+        padding: 0 40px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 700;
+        background: none;
+        border: 1px solid #757575;
+        color: #757575;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        text-transform: uppercase;
+
+        &:hover {
+            background: white;
+            color: #000;
+        }
+    }
+}
+
