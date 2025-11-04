@@ -60,6 +60,7 @@ html, body, #main {
   line-height: 110%;
   text-transform: uppercase;
   font-weight: 800;
+  letter-spacing: 2px;
 }
 
 .section {
@@ -2761,6 +2762,115 @@ html, body, #main {
 }
 .cases-content .cases__card:nth-child(4n+1), .cases-content .cases__card:nth-child(4n) {
   max-width: 66.28%;
+}
+
+.case-promo {
+  position: relative;
+  margin-top: 20px;
+  padding: 45px 48px 50px 48px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+.case-promo__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 69px;
+}
+.case-promo__title {
+  max-width: 780px;
+}
+.case-promo__info-block {
+  display: flex;
+  gap: 52px;
+  margin-right: 36px;
+}
+.case-promo__info-text:first-child {
+  max-width: 378px;
+}
+.case-promo__info-text:last-child {
+  max-width: 335px;
+}
+.case-promo__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: -84px;
+}
+.case-promo__content-link {
+  padding: 22px 55px;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #14CF93;
+  background: #2A2A2A;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.case-promo__image-wrap {
+  position: relative;
+  width: 799px;
+  border-radius: 24px;
+  overflow: hidden;
+  aspect-ratio: 799/437;
+}
+.case-promo__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.case-client {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.case-section {
+  margin-top: 120px;
+}
+.case-section__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 50%;
+  width: 100%;
+}
+.case-section__title {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.48px;
+}
+.case-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.case-section__list--accent {
+  list-style: none;
+}
+.case-section__list--accent .case-section__item {
+  position: relative;
+  padding-left: 64px;
+}
+.case-section__list--accent .case-section__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background: url(../img/case-section-star.svg) no-repeat center;
+}
+.case-section__list--normal .case-section__item {
+  padding-left: 16px;
 }
 
 .corporate-promo {

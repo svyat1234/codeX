@@ -1,0 +1,64 @@
+.case-promo {
+    position: relative;
+    margin-top: 20px;
+    padding: 45px 48px 50px 48px;
+    border-radius: $border-radius;
+    overflow: hidden;
+    background: $dark !important;
+
+    &__heading {
+        @include flex-start-between;
+        margin-top: 69px;
+    }
+
+    &__title {
+        max-width: 780px;
+    }
+
+    &__info-block {
+        display: flex;
+        gap: 52px;
+        margin-right: 36px;
+    }
+
+    &__info-text:first-child {
+        max-width: 378px;
+    }
+
+    &__info-text:last-child {
+        max-width: 335px;
+    }
+
+    &__content {
+        @include flex-end-between;
+        margin-top: -84px;
+    }
+
+    &__content-link {
+        padding: 22px 55px;
+        font-weight: 700;
+        border-radius: 5px;
+        font-size: 16px;
+        color: $accent;
+        background: #2A2A2A;
+        border: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.2s ease;
+        cursor: pointer;
+    }
+
+    &__image-wrap {
+        position: relative;
+        width: 799px;
+        border-radius: 24px;
+        overflow: hidden;
+        aspect-ratio: 799/437;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

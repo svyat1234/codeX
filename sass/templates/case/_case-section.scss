@@ -1,0 +1,49 @@
+.case-section {
+    margin-top: 120px;
+
+    &__content {
+        @include column;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 0.48px;
+    }
+    
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &--accent {
+            list-style: none;
+            
+            & .case-section__item {
+                position: relative;
+                padding-left: 64px;
+            }
+
+            & .case-section__item::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 30px;
+                height: 30px;
+                background: url(../img/case-section-star.svg) no-repeat center;
+            }
+        }
+    
+        &--normal {
+            
+            & .case-section__item {
+                padding-left: 16px;
+            }
+        }
+    }
+
+
+}
