@@ -50,9 +50,12 @@
 
     // case
 
+    @import "templates/case/case-section";
     @import "templates/case/case-promo";
     @import "templates/case/case-client";
-    @import "templates/case/case-section";
+    @import "templates/case/case-tasks";
+    @import "templates/case/case-result";
+    @import "templates/case/case-solution";
 
 
     // corporate-website

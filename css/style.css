@@ -2764,6 +2764,74 @@ html, body, #main {
   max-width: 66.28%;
 }
 
+.case-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 120px;
+  padding-bottom: 90px;
+  border-bottom: 1px solid #303030;
+}
+.case-section__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 50%;
+  width: 100%;
+}
+.case-section__title {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.48px;
+  line-height: 116%;
+}
+.case-section__texts-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+.case-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.case-section__list--accent {
+  list-style: none;
+}
+.case-section__list--accent .case-section__item {
+  position: relative;
+  padding-left: 64px;
+}
+.case-section__list--accent .case-section__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background: url(../img/case-section-star.svg) no-repeat center;
+}
+.case-section__list--normal {
+  margin-left: 20px;
+}
+.case-section__image-wrap {
+  width: 100%;
+  aspect-ratio: 852/810;
+  border-radius: 35px;
+  overflow: hidden;
+  margin: 90px 0;
+}
+.case-section__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .case-promo {
   position: relative;
   margin-top: 20px;
@@ -2825,52 +2893,22 @@ html, body, #main {
      object-fit: cover;
 }
 
-.case-client {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+.case-client__logo-wrap {
+  width: 208px;
+  height: 100px;
+  border-radius: 17.6px;
+  overflow: hidden;
+  margin-bottom: 46px;
 }
-.case-section {
-  margin-top: 120px;
-}
-.case-section__content {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  max-width: 50%;
+.case-client__logo {
   width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-.case-section__title {
-  margin-bottom: 30px;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: 0.48px;
-}
-.case-section__list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.case-section__list--accent {
-  list-style: none;
-}
-.case-section__list--accent .case-section__item {
-  position: relative;
-  padding-left: 64px;
-}
-.case-section__list--accent .case-section__item::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  background: url(../img/case-section-star.svg) no-repeat center;
-}
-.case-section__list--normal .case-section__item {
-  padding-left: 16px;
+
+.case-result__main-title {
+  margin-bottom: 50px;
 }
 
 .corporate-promo {

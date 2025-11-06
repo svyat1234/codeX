@@ -1,7 +1,17 @@
 .case-client {
-    @include flex-start-between;
+
+    &__logo-wrap {
+        width: 208px;
+        height: 100px;
+        border-radius: 17.6px;
+        overflow: hidden;
+        margin-bottom: 46px;
+    }
 
     &__logo {
-        
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
+
 }
