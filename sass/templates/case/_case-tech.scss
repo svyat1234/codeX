@@ -1,0 +1,23 @@
+.case-tech {
+    padding-bottom: 0;
+    border: none;
+
+    &__tags {
+        display: flex;
+        gap: 2;
+    }
+
+    &__tag {
+        padding: 10px 24px;
+        border: 1px solid #d9d9d90a;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0);
+        transition: background 0.1s ease;
+        font-size: 18px;
+        font-weight: 600;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+}

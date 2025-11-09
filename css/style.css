@@ -2911,6 +2911,27 @@ html, body, #main {
   margin-bottom: 50px;
 }
 
+.case-tech {
+  padding-bottom: 0;
+  border: none;
+}
+.case-tech__tags {
+  display: flex;
+  gap: 2;
+}
+.case-tech__tag {
+  padding: 10px 24px;
+  border: 1px solid rgba(217, 217, 217, 0.0392156863);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0);
+  transition: background 0.1s ease;
+  font-size: 18px;
+  font-weight: 600;
+}
+.case-tech__tag:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .corporate-promo {
   position: relative;
   background: rgba(255, 255, 255, 0.03);
