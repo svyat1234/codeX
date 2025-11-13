@@ -1,0 +1,87 @@
+.work {
+
+    &__wrap {
+        @include flex-start-between;
+    }
+
+    &__heading {
+        @include column
+    }
+
+    &__title {
+        max-width: 565px;
+
+        &_padding {
+            position: relative;
+            padding-left: 65px;
+
+            &::after {
+                position: absolute;
+                content: '';
+                display: flex;
+                top: 20px;
+                left: 0;
+                width: 35px;
+                height: 35px;
+                background: url("../../../img/star.svg") no-repeat center / cover;
+            }
+        }
+    }
+
+    &__info {
+        margin-top: 50px;
+        max-width: 578px;
+    }
+
+    &__cards {
+        display: grid;
+        gap: 20px;
+
+        &_heading {
+            max-width: calc(50% - 10px);
+            width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &_main {
+            margin-top: 20px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &__card {
+        height: 313px;
+        background: $dark;
+        border-radius: $border-radius;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+    &__card-icone {
+        width: 84px;
+        height: 84px;
+        background: url("../img/corporate-work.svg") no-repeat center / cover;
+    }
+
+    // &__card-text {
+    // }
+}
+
+// 1024px: стек заголовков/контента
+@include media('tablet-landscape') {
+    .work {
+        &__wrap { flex-direction: column; gap: 20px; }
+        &__cards_heading { max-width: 100%; grid-template-columns: 1fr; }
+        &__cards_main { grid-template-columns: repeat(2, 1fr); }
+    }
+}
+
+// 768px: карточки в один столбец
+@include media('mobile-landscape') {
+    .work {
+        &__cards_main { grid-template-columns: 1fr; }
+        &__card { height: auto; padding: 28px; }
+    }
+}

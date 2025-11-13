@@ -1,0 +1,228 @@
+.prices {
+
+    &__heading {
+        @include flex-start-between;
+    }
+
+    &__heading-sub {
+        color: rgba(255, 255, 255, 0.20);
+        font-family: Geist, sans-serif;
+        font-size: 24.707px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 110%;
+        letter-spacing: 0.824px;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        position: relative;
+        @include column;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: flex;
+            top: 14px;
+            left: -70px;
+            width: 35px;
+            height: 35px;
+            background: url("../../../img/star.svg") no-repeat center / cover;
+        }
+    }
+
+    &__content {
+        @include flex-start-between;
+        margin-top: 65px;
+    }
+
+    &__tabs-info {
+        max-width: 337px;
+        width: 100%;
+    }
+
+    &__tabs-sub {
+        color: #757575;
+        font-family: "Roboto Flex";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 0.48px;
+    }
+
+    &__tabs-buttons {
+        margin-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    &__tabs-button {
+        color: #757575;
+        font-family: "Roboto Flex";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 0.48px;
+        border: 1px solid #757575;
+        background: rgba(255, 255, 255, 0.01);
+        padding: 10px 22px;
+        border-radius: 999px;
+    }
+
+    &__tab {
+        max-width: 1285px;
+        width: 100%;
+        display: grid;
+        row-gap: 40px;
+    }
+
+    &__tab-card {
+        width: 100%;
+    }
+
+    &__tab-about {
+        @include flex-start-between;
+        padding-bottom: 24px;
+    }
+
+    &__about-title {
+        color: #B3B3B3;
+        font-family: "Roboto Flex";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        max-width: 425px;
+        width: 100%;
+    }
+
+    &__tab-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 38px;
+        border-top: 1px solid #303030;
+    }
+
+    &__tab-heading {
+        padding-right: 20px;
+        max-width: 425px;
+        width: 100%;
+    }
+
+    &__tab-title {
+        font-family: Geist;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        text-transform: uppercase;
+    }
+
+    &__tab-text {
+        margin-top: 40px;
+        color: #757575;
+        font-family: "Roboto Flex";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.48px;
+    }
+
+    &__tab-list {
+        padding-right: 20px;
+        max-width: 425px;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 13px;
+    }
+
+    &__tab-item {
+        position: relative;
+        padding-left: 30px;
+        font-family: "Roboto Flex";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 0.48px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            display: flex;
+            top: 5px;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: $accent;
+        }
+    }
+
+    &__tab-prices-action {
+        max-width: 425px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__tab-prices {
+        font-family: Geist;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        text-transform: uppercase;
+    }
+
+    &__tab-link {
+        margin-top: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    &__tab-link-text {
+        @include flex-center-center;
+        padding: 0px 32px;
+        height: 51px;
+        color: #757575;
+        font-family: "Roboto Flex";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 999px;
+        border: 1px solid #757575;
+    }
+
+    &__tab-link-icone {
+        width: 106px;
+        height: 51px;
+        background: url("../img/arrow-accent.svg") no-repeat center / cover;
+    }
+}
+
+// 1024px: заголовки/контент в колонку
+@include media('tablet-landscape') {
+    .prices {
+        &__heading { flex-direction: column; align-items: flex-start; gap: 16px; }
+        &__content { flex-direction: column; }
+    }
+}
+
+// 768px: колонки таба в столбец
+@include media('mobile-landscape') {
+    .prices {
+        &__tab-content { flex-direction: column; gap: 20px; }
+    }
+}

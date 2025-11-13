@@ -201,11 +201,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Параллакс изображения в первой секции
 
-    function initParallaxImage(selector) {
+    function initParallaxImage(selector, maxOffset = 25) {
         if (!document.querySelector(selector)) return;
 
         const parallaxImage = document.querySelector(selector);
-        const maxOffset = 25;
 
         document.addEventListener('mousemove', (e) => {
             const rect = parallaxImage.getBoundingClientRect();
@@ -353,8 +352,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 
-    initParallaxImage('.corporate-promo__image')
-    initParallaxImage('.protection-promo__image')
+    initParallaxImage('.corporate-promo__image', 25)
+    initParallaxImage('.protection-promo__image', 25)
+    initParallaxImage('.chatbots-promo__image-first', 25)
+    initParallaxImage('.chatbots-promo__image-second', 10)
+    
     explanationsCardsAnimation()
     questionsAccordion()
     protectionAdvantagesAnimation()

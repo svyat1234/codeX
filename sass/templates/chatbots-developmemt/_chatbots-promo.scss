@@ -1,0 +1,128 @@
+.chatbots-promo {
+	position: relative;
+	background: $dark;
+	padding: 50px;
+	margin-top: 20px;
+	border-radius: $border-radius;
+
+		// .promo-corporate__heading
+
+		&__heading {
+			margin-top: 70px;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+
+		// .promo-corporate__title
+
+		&__title {
+            max-width: 546px;
+		}
+
+		// .promo-corporate__info-block
+
+		&__info-block {
+			max-width: 766px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		// .promo-corporate__info-text
+
+		&__info-text {
+			font-family: "Roboto Flex", sans-serif;
+			font-size: 22px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 30px;
+			letter-spacing: 0.48px;
+
+				&:first-child {
+					max-width: 378px;
+				}
+				&:last-child {
+					max-width: 335px;
+				}
+
+		}
+
+		// .promo-corporate__link
+
+		&__link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 280px;
+			width: 264.0px;
+			height: 55.0px;
+			border-radius: 5px;
+			font-family: "Roboto Flex";
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 100%;
+			letter-spacing: 0px;
+			text-decoration: none;
+			text-transform: uppercase;
+			background: #2A2A2A;
+			color: $accent;
+		}
+
+		// .promo-corporate__image
+
+		&__image {
+			position: absolute;
+
+			&:first-child {
+				right: 9%;
+				bottom: 10%;
+				width: calc(543px / $container) * 100%; //Чтобы картинка становилась меньше для адаптации, в сделать фикс
+				height: auto;
+				will-change: transform; // Оптимизация для анимации
+				transition: transform 0.3s ease-out;
+			}
+
+			&:last-child {
+				right: 42%;
+				bottom: 30%;
+				width: calc(244px / $container) * 100%; //Чтобы картинка становилась меньше для адаптации, в сделать фикс
+				height: auto;
+				will-change: transform; // Оптимизация для анимации
+				transition: transform 0.3s ease-out;
+			}
+		}
+}
+
+// 1240px: компактнее типографика и блоки
+@include media('desktop-1240') {
+	.chatbots-promo {
+		&__title { font-size: 64px; }
+	}
+}
+
+// 1024px: заголовок и ссылка в колонку, инфоблокы в колонку
+@include media('tablet-landscape') {
+	.chatbots-promo {
+		padding: 40px;
+		&__heading { flex-direction: column; align-items: flex-start; gap: 16px; }
+		&__info-block { flex-direction: column; gap: 16px; }
+		&__link { margin-top: 80px; }
+		&__image { position: static; width: 100%; }
+	}
+}
+
+// 768px: ещё меньше
+@include media('mobile-landscape') {
+	.chatbots-promo {
+		padding: 28px;
+		&__title { font-size: 40px; }
+		&__link { margin-top: 40px; width: 100%; }
+	}
+}
+
+// 586px: плотные отступы
+@include media('mobile-wide-586') {
+	.chatbots-promo { padding: 20px; }
+}

@@ -22,6 +22,10 @@
     @import "components/questions";
     @import "components/explanations";
     @import "components/real-projects";
+    @import "components/about";
+    @import "components/work";
+    @import "components/prices";
+    @import "components/services";
 
 
     // index
@@ -63,7 +67,7 @@
 
     @import "templates/corporate-website/corporate-promo";
     @import "templates/corporate-website/corporate-team";
-    @import "templates/corporate-website/corporate-about";
+    // @import "templates/corporate-website/corporate-about";
     @import "templates/corporate-website/corporate-advantage";
     @import "templates/corporate-website/corporate-stages";
     @import "templates/corporate-website/corporate-cms";
@@ -71,7 +75,7 @@
     @import "templates/corporate-website/corporate-speed";
     @import "templates/corporate-website/corporate-cases";
     @import "templates/corporate-website/corporate-price";
-    @import "templates/corporate-website/corporate-work";
+    // @import "templates/corporate-website/corporate-work";
     @import "templates/corporate-website/corporate-services";
 
 
@@ -82,6 +86,14 @@
     @import "templates/site-protection/protection-explanations";
     @import "templates/site-protection/protection-advantages";
     @import "templates/site-protection/protection-team";
+
+
+    // chatbots-development
+
+    @import "templates/chatbots-developmemt/chatbots-promo";
+    @import "templates/chatbots-developmemt/chatbots-team";
+
+
     // contacts
 
     @import "templates/contacts/contacts";
