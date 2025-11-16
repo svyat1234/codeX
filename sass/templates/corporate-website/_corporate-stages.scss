@@ -9,8 +9,8 @@
     &__tabs-buttons {
         position: relative;
         display: flex;
-        flex-direction: column  ;
-        row-gap: 20px;
+        flex-direction: column;
+        row-gap: 25px;
         list-style: none;
         max-width: 555px;
         width: 100%;
@@ -23,12 +23,23 @@
     &__tabs-button {
         font-family: "Roboto Flex", sans-serif;
         font-size: 25px;
+        font-weight: 500;
         letter-spacing: 0.48px;
         color: $light;
         opacity: 5%;
+        line-height: 110%;
+        transition: all 0.2s ease-in-out;
+        background: none;
+        border: none;
+        text-align: left;
+        cursor: pointer;
 
         &_active {
             opacity: 1;
+        }
+        
+        &:hover {
+            opacity: 0.3;
         }
     }
 
@@ -74,7 +85,10 @@
         }
 
         &-title {
-            max-width: 363px;    
+            max-width: 360px;
+            font-size: 30px;
+            line-height: 110%;
+            font-weight: 600;
         }
 
         &-info {

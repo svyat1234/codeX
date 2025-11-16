@@ -4,7 +4,7 @@
     margin-top: 20px;
     min-height: 548px;
     /* База: половина экрана, но не ниже минимума */
-    height: 50vh;
+    height: 30vh;
     border-radius: $border-radius;
     overflow: hidden;
     background: $dark;
@@ -31,7 +31,7 @@
 // Высотная адаптация первого экрана под разные мониторы
 // FullHD: занимать почти весь экран
 @media screen and (min-height: 900px) and (min-width: 1280px) {
-    .company-promo { height: 90vh; }
+    // .company-promo { height: 90vh; } Временно скрыл, так как на больших мониторах слишком большой блок
 }
 
 // 2K: сохраняем пропорции, не делаем контент крошечным

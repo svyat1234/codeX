@@ -25,36 +25,28 @@
             <nav class="header__nav">
                 <a href="./services.html" class="link header__nav-link">Что мы делаем</a>
                 <a href="./company.html" class="link header__nav-link">Компания</a>
-                <a href="./services.html" class="link header__nav-link">Кейсы</a>
+                <a href="./cases.html" class="link header__nav-link">Кейсы</a>
                 <a href="./contacts.html" class="link header__nav-link">Контакты</a>
             </nav>
 
-            <div class="header__contacts">
-                <a href="mailto:zakaz@code-x.website" class="link header__contacts-link">zakaz@code-x.website</a>
-                <a href="tel:74954571825" class="link header__contacts-link">+7.495.457.18.25</a>
+            <div class="header__buttons">
+                <button class="header__search"></button>
+                <button class="header__burger"></button>
             </div>
-            <!-- /.header__contacts -->
-             
-            <div class="header__socials">
-                <a href="./404.html" class="header__socials-link"><img src="./img/telegram.svg" alt="telegram" class="header__socials-link-img"></a>
-                <a href="./404.html" class="header__socials-link"><img src="./img/whatsapp.svg" alt="whatsapp" class="header__socials-link-img"></a>
-            </div>
-            <!-- /.header__socials -->
+            <!-- /.header__buttons -->
 
-            <button class="header__burger"></button>
+            <div class="header__search-popup">
+                <input type="text" class="header__search-input" placeholder="Поиск...">
+            </div>
+            <!-- /.header__search-popup -->
+
+            
         </header>
         <!-- /.header -->
-
 
         <!-- PROMO -->
 
         <section class="company-promo container">
-            <div class="company-promo__logo">
-                <img src="./img/logo.svg.svg" alt="code-x" class="company-promo__logo-img">
-            </div>
-            <!-- /.company-promo__logo -->
-            <div class="company-promo__logo-sub"></div>
-
 
             <div class="company-promo__bg">
                 <video class="company-promo__bg-video" autoplay muted loop playsinline>
@@ -191,9 +183,103 @@
         </section>
         <!-- /.team -->
 
+        <!-- company-expertise -->
+
+        <section class="company-expertise section container">
+            <div class="company-expertise__heading">
+                <span class="company-expertise__sub section-sub">Наши преимущества</span>
+
+                <div class="company-expertise__content">
+                    <h2 class="company-expertise__title section-title">Наши <span class="accent">преимущества</span></h2>
+                    <p class="company-expertise__info main-text">Эффективный сайт с интересными компонентами для продажи сложных услуг и товаров.   </p>
+                </div>
+                <!-- /.company-expertise__content -->
+            </div>
+            <!-- /.company-expertise__heading -->
+
+            <div class="company-expertise__cards-wrap">
+
+                <div class="company-expertise__cards">
+                    <div class="company-expertise__card-big company-expertise__card-icon-only">
+                        <div class="company-expertise__card-icon"></div>
+                    </div>
+                    <!-- /.company-expertise__card -->
+                    <div class="company-expertise__card-small">
+                        <span class="company-expertise__card-small-stat">
+                            <span class="company-expertise__card-small-number">30</span>
+                            <span class="company-expertise__card-small-addition">+</span>
+                        </span>
+                        <span class="company-expertise__card-small-text">Сотрудниковв нашей команде</span>
+                    </div>
+                    <!-- /.company-expertise__card-small -->
+                </div>
+                <!-- /.company-expertise__cards -->
+
+                <div class="company-expertise__cards">
+                    <div class="company-expertise__card-small">
+                        <span class="company-expertise__card-small-stat">
+                            <span class="company-expertise__card-small-number">10</span>
+                            <span class="company-expertise__card-small-addition">Лет</span>
+                        </span>
+                        <span class="company-expertise__card-small-text">Сотрудниковв нашей команде</span>
+                    </div>
+                    <!-- /.company-expertise__card-small -->
+                    <div class="company-expertise__card-big company-expertise__card-security">
+                        <div class="company-expertise__card-security-images">
+                            <div class="company-expertise__card-security-image-wrap">
+                                <img src="./img/company-expertise-card-security-image-01.png" alt="" class="company-expertise__card-security-image">
+                            </div>
+                            <div class="company-expertise__card-security-image-wrap">
+                                <img src="./img/company-expertise-card-security-image-02.png" alt="" class="company-expertise__card-security-image">
+                            </div>
+                            <div class="company-expertise__card-security-image-wrap">
+                                <img src="./img/company-expertise-card-security-image-03.png" alt="" class="company-expertise__card-security-image">
+                            </div>
+                            <div class="company-expertise__card-security-image-wrap">
+                                <img src="./img/company-expertise-card-security-image-04.png" alt="" class="company-expertise__card-security-image">
+                            </div>
+                            <div class="company-expertise__card-security-image-wrap">
+                                <img src="./img/company-expertise-card-security-image-05.png" alt="" class="company-expertise__card-security-image">
+                            </div>
+                            <div class="company-expertise__card-security-image-wrap">
+                                <img src="./img/company-expertise-card-security-image-06.png" alt="" class="company-expertise__card-security-image">
+                            </div>
+                        </div>
+                        <!-- /.company-expertise__card-security-images -->
+                        <p class="company-expertise__card-security-text">Защита приложений на всех
+                            этапах — от разработки
+                            до эксплуатации</p>
+                    </div>
+                    <!-- /.company-expertise__card-big company-expertise__card-security -->
+                </div>
+                <!-- /.company-expertise__cards -->
+
+                <div class="company-expertise__cards">
+                    <div class="company-expertise__card-big company-expertise__card-products">
+                        <div class="company-expertise__card-products-icon"></div>
+                        <p class="company-expertise__card-products-text">Уникальные программные
+                            продукты для автоматической
+                            многоуровневой защиты</p>
+                    </div>
+                    <!-- /.company-expertise__card-big company-expertise__card-icon-only -->
+                    <div class="company-expertise__card-small">
+                        <span class="company-expertise__card-small-stat">
+                            <span class="company-expertise__card-small-number">89</span>
+                            <span class="company-expertise__card-small-addition">%</span>
+                        </span>
+                        <span class="company-expertise__card-small-text">Клиентов рекомендуют нас</span>
+                    </div>
+                    <!-- /.company-expertise__card-small -->
+                </div>
+                <!-- /.company-expertise__cards -->
+
+            </div>
+            <!-- /.company-expertise__cards-wrap -->
+        </section>
+        <!-- /.company-expertise -->
+
 
         <!-- PROJECTS -->
-
 
         <section class="projects section container">
             <div class="projects__heading">

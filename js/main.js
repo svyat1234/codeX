@@ -485,7 +485,91 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Вызов функции
+    function chatbotsServicesTabs() {
+        const buttons = document.querySelectorAll('.chatbots-services__tabs-button');
+        const tabs = document.querySelectorAll('.chatbots-services__tab');
+
+        if (!buttons.length || !tabs.length) return;
+
+        let activeIndex = Array.from(tabs).findIndex(tab =>
+            tab.classList.contains('chatbots-services__tab--active')
+        );
+
+        if (activeIndex === -1) {
+            activeIndex = 0;
+            tabs[0].classList.add('chatbots-services__tab--active');
+            buttons[0].classList.add('chatbots-services__tabs-button--active');
+        }
+
+        buttons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                if (index === activeIndex) return;
+
+                const currentTab = tabs[activeIndex];
+                const nextTab = tabs[index];
+
+                // переключаем активную кнопку
+                buttons.forEach((btn) => {
+                    btn.classList.remove('chatbots-services__tabs-button--active');
+                });
+                button.classList.add('chatbots-services__tabs-button--active');
+
+                // анимация табов
+                gsap.killTweensOf([currentTab, nextTab]);
+
+                const duration = 0.35;
+
+                gsap.to(currentTab, {
+                    opacity: 0,
+                    y: 20,
+                    duration,
+                    ease: 'power2.out',
+                    onComplete: () => {
+                        currentTab.classList.remove('chatbots-services__tab--active');
+                        currentTab.style.display = 'none';
+
+                        nextTab.style.display = '';
+                        gsap.fromTo(nextTab,
+                            { opacity: 0, y: -20 },
+                            {
+                                opacity: 1,
+                                y: 0,
+                                duration,
+                                ease: 'power2.out',
+                                onStart: () => {
+                                    nextTab.classList.add('chatbots-services__tab--active');
+                                }
+                            }
+                        );
+                    }
+                });
+
+                activeIndex = index;
+            });
+        });
+    }
+
+    function headerSearchPopup() {
+        const searchButton = document.querySelector('.header__search');
+        const searchPopup = document.querySelector('.header__search-popup');
+        
+        if (!searchButton || !searchPopup) return;
+
+        searchButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            searchPopup.classList.toggle('header__search-popup--active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!searchPopup.contains(e.target) && e.target !== searchButton) {
+                searchPopup.classList.remove('header__search-popup--active');
+            }
+        });
+    }
+
+    // Вызов функций
     budgetRangeAnimation();
+    chatbotsServicesTabs();
+    headerSearchPopup();
 
 })

@@ -40,11 +40,12 @@
             font-weight: 700;
             letter-spacing: 0.48px;
             color: $light;
+            line-height: 110%;
           }
     
           &-icon {
-              width: 35px;
-              height: 35px;
+              min-width: 35px;
+              min-height: 35px;
               background: url("../img/star-light.svg") no-repeat center / cover;
               transition: 0.5s;
           }

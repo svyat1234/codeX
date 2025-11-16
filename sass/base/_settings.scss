@@ -293,65 +293,6 @@ html, body, #main { max-width: 100%; }
   }  
 }
 
-// .explanations {
-//   &__cards {
-//     margin-top: 90px;
-//     width: 100%;
-//     display: grid;
-//     row-gap: 10px;
-//   }
-
-//   &__card {
-//       background: $dark;
-//       border-radius: $border-radius;
-//       max-height: 112px; // Фиксированная высота в закрытом состоянии
-//       overflow: hidden;
-//       padding: 30px;
-//       cursor: pointer;
-//       transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1); // Плавная easing-функция
-
-//       &-heading {
-//           @include flex-center-between;
-//           height: 112px;
-//           margin-top: -30px;
-//       }
-
-//       &-icon {
-//           width: 35px;
-//           height: 35px;
-//           background: url("../img/star-light.svg") no-repeat center / cover;
-//           transition: 0.5s;
-//       }
-
-//       &-text-wrap {
-//           margin-top: 95px;
-//           display: flex;
-//           justify-content: flex-end;
-//       }
-
-//       &-text {
-//           max-width: 50%;
-//           padding-right: 170px;
-//       }
-
-//       &-img {
-//           margin-top: 90px;
-//           width: 100%;
-//           height: auto;
-//           border-radius: $border-radius
-//       }
-
-//       &_active {
-//           max-height: var(--dynamic-height); // Динамическая высота через CSS-переменную
-//           transition: 0.5s;
-          
-//           & .questions__card-icon {
-//               transform: rotate(-45deg);
-//               background: url("../img/star.svg") no-repeat center / cover;
-//           }
-//       }
-//   }
-// }
 
 .cases {
   &__cards {
@@ -522,4 +463,9 @@ html, body, #main { max-width: 100%; }
 .swiper-pagination-bullet-active {
   width: 24px;
   background: $accent;
+}
+
+.services-page-title {
+  margin-top: 80px;
+  margin-bottom: -100px;
 }

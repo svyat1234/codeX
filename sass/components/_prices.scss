@@ -70,6 +70,14 @@
         background: rgba(255, 255, 255, 0.01);
         padding: 10px 22px;
         border-radius: 999px;
+
+        transition: all 0.2s ease;
+
+        &:hover {
+            border: 1px solid $light;
+            color: $light;
+            cursor: pointer;
+        }
     }
 
     &__tab {

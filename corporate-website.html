@@ -23,26 +23,25 @@
         <header class="header container">
             <a href="/" class="header__logo"><img src="./img/logo.svg.svg" alt="code-x" class="header__logo-img"></a>
 
-            <div class="header__content">
-                <nav class="header__nav">
-                    <a href="./services.html" class="link header__nav-link">Что мы делаем</a>
-                    <a href="./company.html" class="link header__nav-link">Компания</a>
-                    <a href="./services.html" class="link header__nav-link">Кейсы</a>
-                    <a href="./contacts.html" class="link header__nav-link">Контакты</a>
-                </nav>
-                <div class="header__contacts">
-                    <a href="mailto:zakaz@code-x.website" class="link header__contacts-link">zakaz@code-x.website</a>
-                    <a href="tel:74954571825" class="link header__contacts-link">+7.495.457.18.25</a>
-                </div>
-                <!-- /.header__contacts -->
-                <div class="header__socials">
-                    <a href="./404.html" class="header__socials-link"><img src="./img/telegram.svg" alt="telegram" class="header__socials-link-img"></a>
-                    <a href="./404.html" class="header__socials-link"><img src="./img/whatsapp.svg" alt="whatsapp" class="header__socials-link-img"></a>
-                </div>
-                <!-- /.header__socials -->
+            <nav class="header__nav">
+                <a href="./services.html" class="link header__nav-link">Что мы делаем</a>
+                <a href="./company.html" class="link header__nav-link">Компания</a>
+                <a href="./cases.html" class="link header__nav-link">Кейсы</a>
+                <a href="./contacts.html" class="link header__nav-link">Контакты</a>
+            </nav>
+
+            <div class="header__buttons">
+                <button class="header__search"></button>
+                <button class="header__burger"></button>
             </div>
-            <!-- /.header__content -->
-            <button class="header__burger"></button>
+            <!-- /.header__buttons -->
+
+            <div class="header__search-popup">
+                <input type="text" class="header__search-input" placeholder="Поиск...">
+            </div>
+            <!-- /.header__search-popup -->
+
+            
         </header>
         <!-- /.header -->
 
@@ -156,6 +155,9 @@
         </section>
         <!-- /.about -->
 
+
+        <!-- CORPORATE ADVANTAGE -->
+
         <section class="corporate-advantage container section">
             <div class="corporate-advantage__heading">
                 <h2 class="corporate-advantage__title section-title">Корпоративный сайт под ключ - это</h2>
@@ -193,24 +195,27 @@
         </section>
         <!-- /.corporate-advantage -->
 
+
+        <!-- CORPORATE STAGES -->
+
         <section class="corporate-stages section">
             <div class="container">
                 <h2 class="corporate-stages__title section-title">ЭТАПЫ РАБОТЫ</h2>
 
                 <div class="corporate-stages__content">
-                    <ul class="corporate-stages__tabs-buttons">
-                        <li class="corporate-stages__tabs-button corporate-stages__tabs-button_active">Анализ рынка</li>
-                        <li class="corporate-stages__tabs-button">Создание креативов</li>
-                        <li class="corporate-stages__tabs-button">Разработка структуры сайта</li>
-                        <li class="corporate-stages__tabs-button">Разработка дизайн макета</li>
-                        <li class="corporate-stages__tabs-button">Верстка макета</li>
-                        <li class="corporate-stages__tabs-button">Интеграция с CMS</li>
-                        <li class="corporate-stages__tabs-button">Перенос на рабочий хостинг</li>
-                        <li class="corporate-stages__tabs-button">Тестирование и отладка</li>
-                        <li class="corporate-stages__tabs-button">Сдача готового сайта</li>
+                    <div class="corporate-stages__tabs-buttons">
+                        <button class="corporate-stages__tabs-button corporate-stages__tabs-button_active">Анализ рынка</button>
+                        <button class="corporate-stages__tabs-button">Создание креативов</button>
+                        <button class="corporate-stages__tabs-button">Разработка структуры сайта</button>
+                        <button class="corporate-stages__tabs-button">Разработка дизайн макета</button>
+                        <button class="corporate-stages__tabs-button">Верстка макета</button>
+                        <button class="corporate-stages__tabs-button">Интеграция с CMS</button>
+                        <button class="corporate-stages__tabs-button">Перенос на рабочий хостинг</button>
+                        <button class="corporate-stages__tabs-button">Тестирование и отладка</button>
+                        <button class="corporate-stages__tabs-button">Сдача готового сайта</button>
 
                         <span class="corporate-stages__tabs-num">1</span>
-                    </ul>
+                    </div>
                     <!-- /.corporate-stages__tabs-buttons -->
 
                     <div class="corporate-stages__tab">
@@ -218,7 +223,7 @@
 
                         <div class="corporate-stages__tab-content">
                             <div class="corporate-stages__tab-heading">
-                                <h3 class="corporate-stages__tab-title section-sub" section-sub>Первичная информация и маркетинговый анализ</h3>
+                                <h3 class="corporate-stages__tab-title">Первичная информация и маркетинговый анализ</h3>
                                 <p class="corporate-stages__tab-info main-text">Прежде чем приступить к разработке дизайна, мы проводим маркетинговый анализ Вашей ниши, выявляем целевую аудиторию, собираем данные о конкурентах.</p>
                             </div>
                             <!-- /.corporate-stages__tab-heading -->
@@ -269,28 +274,31 @@
         </section>
         <!-- /.corporate-stages -->
 
-        <section class="corporate-approach section">
+
+        <!-- CORPORATE APPROACH -->
+
+        <section class="explanations section">
             <div class="container">
                 <div class="explanations__heading">
-                    <span class="heading-num">02</span>
+                    <span class="section-sub">методология</span>
 
                     <div class="explanations__heading-content">
-                        <h2 class="explanations__title section-title">Коротко о нашем <span class="accent">подходе</span> к разработке</h2>
-                        <span class="explanations__info main-text">Эффективный сайт с интересными компонентами для продажи сложных услуг и товаров.</span>
+                        <h2 class="explanations__title section-title">Комплексное <span class="accent">решение</span> для вашего сайта</h2>
+                        <span class="explanations__info main-text">Ниже на фотографии изображен код сайта компании Porsche, на котором видны файлы Astro JS. Мы предполагаем, что в этой компании работают лучшие IT-специалисты, и они сделали правильный выбор.</span>
                     </div>
-                    <!-- /.explanations__heading-content -->
+                    <!-- /.corporate-approach__heading-content -->
                 </div>
-                <!-- /.explanations__heading -->
+                <!-- /.corporate-approach__heading -->
 
 
                 <div class="explanations__cards">
 
                     <div class="explanations__card">
                         <div class="explanations__card-heading">
-                            <h3 class="explanations__card-title section-sub">Два клика и PWA-приложения</h3>
+                            <h3 class="explanations__card-title">Два клика и PWA-приложения</h3>
                             <div class="explanations__card-icon"></div>
                         </div>
-                        <!-- /.questions__card-heading -->
+                        <!-- /.explanations__card-heading -->
                 
                         <div class="explanations__card-text-wrap">
                             <p class="explanations__card-text main-text">
@@ -300,14 +308,14 @@
                         
                         <img src="./img/corporate-approach.png" alt="" class="explanations__card-img">
                     </div>  
-                    <!-- /.questions__card -->
+                    <!-- /.explanations__card -->
                      
                     <div class="explanations__card">
                         <div class="explanations__card-heading">
-                            <h3 class="explanations__card-title section-sub">Gatsby vs WordPress vs Bitrix vs Tilda</h3>
+                            <h3 class="explanations__card-title">Gatsby vs WordPress vs Bitrix vs Tilda</h3>
                             <div class="explanations__card-icon"></div>
                         </div>
-                        <!-- /.questions__card-heading -->
+                        <!-- /.explanations__card-heading -->
                 
                         <div class="explanations__card-text-wrap">
                             <p class="explanations__card-text main-text">
@@ -317,14 +325,14 @@
                 
                         <img src="./img/corporate-approach.png" alt="" class="explanations__card-img">
                     </div>  
-                    <!-- /.questions__card -->
+                    <!-- /.explanations__card -->
                      
                     <div class="explanations__card">
                         <div class="explanations__card-heading">
-                            <h3 class="explanations__card-title section-sub">Можем использовать данные и процессы из прошлых CMS</h3>
+                            <h3 class="explanations__card-title">Можем использовать данные и процессы из прошлых CMS</h3>
                             <div class="explanations__card-icon"></div>
                         </div>
-                        <!-- /.questions__card-heading -->
+                        <!-- /.explanations__card-heading -->
                 
                         <div class="explanations__card-text-wrap">
                             <p class="explanations__card-text main-text">
@@ -334,14 +342,14 @@
                 
                         <img src="./img/corporate-approach.png" alt="" class="explanations__card-img">
                     </div>  
-                    <!-- /.questions__card -->
+                    <!-- /.explanations__card -->
                      
                     <div class="explanations__card">
                         <div class="explanations__card-heading">
-                            <h3 class="explanations__card-title section-sub">Делаем Correspondence analysis в исследованиях</h3>
+                            <h3 class="explanations__card-title">Делаем Correspondence analysis в исследованиях</h3>
                             <div class="explanations__card-icon"></div>
                         </div>
-                        <!-- /.questions__card-heading -->
+                        <!-- /.explanations__card-heading -->
                 
                         <div class="explanations__card-text-wrap">
                             <p class="explanations__card-text main-text">
@@ -351,14 +359,14 @@
                 
                         <img src="./img/corporate-approach.png" alt="" class="explanations__card-img">
                     </div>  
-                    <!-- /.questions__card -->
+                    <!-- /.explanations__card -->
                      
                     <div class="explanations__card">
                         <div class="explanations__card-heading">
-                            <h3 class="explanations__card-title section-sub">Специальный сервер для международных проектов</h3>
+                            <h3 class="explanations__card-title">Специальный сервер для международных проектов</h3>
                             <div class="explanations__card-icon"></div>
                         </div>
-                        <!-- /.questions__card-heading -->
+                        <!-- /.explanations__card-heading -->
                 
                         <div class="explanations__card-text-wrap">
                             <p class="explanations__card-text main-text">
@@ -368,16 +376,87 @@
                 
                         <img src="./img/corporate-approach.png" alt="" class="explanations__card-img">
                     </div>  
-                    <!-- /.questions__card -->
+                    <!-- /.explanations__card -->
                      
                 </div>
-                <!-- /.questions__cards -->
+                <!-- /.explanations__cards -->
 
             </div>
             <!-- /.container -->
 
         </section>
-        <!-- /.corporate-approach -->
+        <!-- /.explanations -->
+     
+        
+        <!-- SCRUM -->
+
+        <section class="scrum section container">
+
+            <div class="scrum__heading">
+                <h2 class="scrum__title section-title">Используем метод <span class="accent">scrum</span></h2>
+                
+                <div class="scrum__info-wrap">
+                    <span class="scrum__info main-text">Разбиваем задачи на спринты. Спринт длиться 1-2 недели.</span>
+                </div>
+                <!-- /.scrum__info-wrap -->
+            </div>
+            <!-- /.scrum__heading -->
+
+            <div class="scrum__cards">
+                <div class="scrum__card">
+                    <h3 class="scrum__card-title">ЮЗЕР СТОРИ</h3>
+
+                    <div class="scrum__card-icon-wrap">
+                        <div class="scrum__card-icon"></div>
+                    </div>
+                    <!-- /.scrum__card-icon-wrap -->
+
+                    <p class="scrum__card-text">Описываем историю пользователя при взаимодействии с продуктом</p>
+                </div>
+                <!-- /.scrum__card -->
+                
+                <div class="scrum__card">
+                    <h3 class="scrum__card-title">ЮЗЕР СТОРИ</h3>
+
+                    <div class="scrum__card-icon-wrap">
+                        <div class="scrum__card-icon"></div>
+                    </div>
+                    <!-- /.scrum__card-icon-wrap -->
+
+                    <p class="scrum__card-text">Описываем историю пользователя при взаимодействии с продуктом</p>
+                </div>
+                <!-- /.scrum__card -->
+                
+                <div class="scrum__card">
+                    <h3 class="scrum__card-title">ЮЗЕР СТОРИ</h3>
+
+                    <div class="scrum__card-icon-wrap">
+                        <div class="scrum__card-icon"></div>
+                    </div>
+                    <!-- /.scrum__card-icon-wrap -->
+
+                    <p class="scrum__card-text">Описываем историю пользователя при взаимодействии с продуктом</p>
+                </div>
+                <!-- /.scrum__card -->
+                
+                <div class="scrum__card">
+                    <h3 class="scrum__card-title">ЮЗЕР СТОРИ</h3>
+
+                    <div class="scrum__card-icon-wrap">
+                        <div class="scrum__card-icon"></div>
+                    </div>
+                    <!-- /.scrum__card-icon-wrap -->
+
+                    <p class="scrum__card-text">Описываем историю пользователя при взаимодействии с продуктом</p>
+                </div>
+                <!-- /.scrum__card -->
+                
+            </div>
+            <!-- /.scrum__cards -->
+        </section>
+        <!-- /.scrum -->
+
+        <!-- CORPORATE CMS -->
 
         <section class="corporate-cms section container">
 
@@ -607,6 +686,9 @@
         </section>
         <!-- /.corporate-cms -->
 
+
+        <!-- CORPORATE OPTIMIZATION -->
+
         <section class="corporate-optimization section">
             
             <div class="corporate-optimization__content container">
@@ -654,97 +736,119 @@
             <!-- /.container -->
         </section>
         <!-- /.corporate-optimization -->
-        
-        <section class="corporate-speed section container">
 
-            <div class="corporate-speed__heading">
-                
-                <span class="corporate-speed__sub">о Lighthouse</span>
-                
-                <div class="corporate-speed__heading-content">
-                    <h2 class="corporate-speed__title section-title">Почему важна <span class="accent">скорость?</span></h2>
-                    <p class="corporate-speed__info main-text">Выше конверсия – 53% пользователей уходят при загрузке дольше 3 секунд. Лучше SEO – Google ранжирует быстрые сайты выше. Дольше engagement – посетители остаются на сайте и чаще покупают</p>
+
+        <!-- EXPLANATIONS -->
+
+        <section class="explanations section">
+            <div class="container">
+                <div class="explanations__heading">
+                    <span class="section-sub">методология</span>
+
+                    <div class="explanations__heading-content">
+                        <h2 class="explanations__title section-title">Почему важна <span class="accent">скорость?</span></h2>
+                        <span class="explanations__info main-text">Выше конверсия – 53% пользователей уходят при загрузке дольше 3 секунд. Лучше SEO – Google ранжирует быстрые сайты выше. Дольше engagement – посетители остаются на сайте и чаще покупают</span>
+                    </div>
+                    <!-- /.corporate-approach__heading-content -->
                 </div>
-                <!-- /.corporate-speed__heading-content -->
-            
-            </div>
-            <!-- /.corporate-speed__heading -->
+                <!-- /.corporate-approach__heading -->
 
-            <div class="explanations__cards">
 
-                <div class="explanations__card">
-                    <div class="explanations__card-heading">
-                        <h3 class="explanations__card-title section-sub">Подробнее про важность скорости для конверсии</h3>
-                        <div class="explanations__card-icon"></div>
-                    </div>
-                    <!-- /.questions__card-heading -->
-            
-                    <div class="explanations__card-text-wrap">
-                        <p class="explanations__card-text main-text">
-                            Ниже на фотографии изображен код сайта компании Porsche, на котором видны файлы Astro JS. Мы предполагаем, что в этой компании работают лучшие IT-специалисты, и они сделали правильный выбор.
-                        </p>
-                    </div>
-                    
-                    <img src="./img/corporate-speed.png" alt="" class="explanations__card-img">
-                </div>  
-                <!-- /.questions__card -->
-                 
-                <div class="explanations__card">
-                    <div class="explanations__card-heading">
-                        <h3 class="explanations__card-title section-sub">Подробнее про важность скорости для конверсии</h3>
-                        <div class="explanations__card-icon"></div>
-                    </div>
-                    <!-- /.questions__card-heading -->
-            
-                    <div class="explanations__card-text-wrap">
-                        <p class="explanations__card-text main-text">
-                            Ниже на фотографии изображен код сайта компании Porsche, на котором видны файлы Astro JS. Мы предполагаем, что в этой компании работают лучшие IT-специалисты, и они сделали правильный выбор.
-                        </p>
-                    </div>
-            
-                    <img src="./img/corporate-speed.png" alt="" class="explanations__card-img">
-                </div>  
-                <!-- /.questions__card -->
-                 
-                <div class="explanations__card">
-                    <div class="explanations__card-heading">
-                        <h3 class="explanations__card-title section-sub">Как сделать такой же отчет в Google Analytics и Яндекс метрике?</h3>
-                        <div class="explanations__card-icon"></div>
-                    </div>
-                    <!-- /.questions__card-heading -->
-            
-                    <div class="explanations__card-text-wrap">
-                        <p class="explanations__card-text main-text">
-                            Ниже на фотографии изображен код сайта компании Porsche, на котором видны файлы Astro JS. Мы предполагаем, что в этой компании работают лучшие IT-специалисты, и они сделали правильный выбор.
-                        </p>
-                    </div>
-            
-                    <img src="./img/corporate-speed.png" alt="" class="explanations__card-img">
-                </div>  
-                <!-- /.questions__card -->
-                 
-                <div class="explanations__card">
-                    <div class="explanations__card-heading">
-                        <h3 class="explanations__card-title section-sub">У меня сайт быстрый... при подключенном Wifi</h3>
-                        <div class="explanations__card-icon"></div>
-                    </div>
-                    <!-- /.questions__card-heading -->
-            
-                    <div class="explanations__card-text-wrap">
-                        <p class="explanations__card-text main-text">
-                            Ниже на фотографии изображен код сайта компании Porsche, на котором видны файлы Astro JS. Мы предполагаем, что в этой компании работают лучшие IT-специалисты, и они сделали правильный выбор.
-                        </p>
-                    </div>
-            
-                    <img src="./img/corporate-speed.png" alt="" class="explanations__card-img">
-                </div>  
-                <!-- /.questions__card -->
-                 
+                <div class="explanations__cards">
+
+                    <div class="explanations__card">
+                        <div class="explanations__card-heading">
+                            <h3 class="explanations__card-title">Два клика и PWA-приложения</h3>
+                            <div class="explanations__card-icon"></div>
+                        </div>
+                        <!-- /.explanations__card-heading -->
+                
+                        <div class="explanations__card-text-wrap">
+                            <p class="explanations__card-text main-text">
+                                Ниже на фотографии изображен код сайта компании Porsche, на котором видны файлы Astro JS. Мы предполагаем, что в этой компании работают лучшие IT-специалисты, и они сделали правильный выбор.
+                            </p>
+                        </div>
+                        
+                        <img src="./img/corporate-approach.png" alt="" class="explanations__card-img">
+                    </div>  
+                    <!-- /.explanations__card -->
+                     
+                    <div class="explanations__card">
+                        <div class="explanations__card-heading">
+                            <h3 class="explanations__card-title">Gatsby vs WordPress vs Bitrix vs Tilda</h3>
+                            <div class="explanations__card-icon"></div>
+                        </div>
+                        <!-- /.explanations__card-heading -->
+                
+                        <div class="explanations__card-text-wrap">
+                            <p class="explanations__card-text main-text">
+                                Ниже на фотографии изображен код сайта компании Porsche, на котором видны файлы Astro JS. Мы предполагаем, что в этой компании работают лучшие IT-специалисты, и они сделали правильный выбор.
+                            </p>
+                        </div>
+                
+                        <img src="./img/corporate-approach.png" alt="" class="explanations__card-img">
+                    </div>  
+                    <!-- /.explanations__card -->
+                     
+                    <div class="explanations__card">
+                        <div class="explanations__card-heading">
+                            <h3 class="explanations__card-title">Можем использовать данные и процессы из прошлых CMS</h3>
+                            <div class="explanations__card-icon"></div>
+                        </div>
+                        <!-- /.explanations__card-heading -->
+                
+                        <div class="explanations__card-text-wrap">
+                            <p class="explanations__card-text main-text">
+                                Ниже на фотографии изображен код сайта компании Porsche, на котором видны файлы Astro JS. Мы предполагаем, что в этой компании работают лучшие IT-специалисты, и они сделали правильный выбор.
+                            </p>
+                        </div>
+                
+                        <img src="./img/corporate-approach.png" alt="" class="explanations__card-img">
+                    </div>  
+                    <!-- /.explanations__card -->
+                     
+                    <div class="explanations__card">
+                        <div class="explanations__card-heading">
+                            <h3 class="explanations__card-title">Делаем Correspondence analysis в исследованиях</h3>
+                            <div class="explanations__card-icon"></div>
+                        </div>
+                        <!-- /.explanations__card-heading -->
+                
+                        <div class="explanations__card-text-wrap">
+                            <p class="explanations__card-text main-text">
+                                Ниже на фотографии изображен код сайта компании Porsche, на котором видны файлы Astro JS. Мы предполагаем, что в этой компании работают лучшие IT-специалисты, и они сделали правильный выбор.
+                            </p>
+                        </div>
+                
+                        <img src="./img/corporate-approach.png" alt="" class="explanations__card-img">
+                    </div>  
+                    <!-- /.explanations__card -->
+                     
+                    <div class="explanations__card">
+                        <div class="explanations__card-heading">
+                            <h3 class="explanations__card-title">Специальный сервер для международных проектов</h3>
+                            <div class="explanations__card-icon"></div>
+                        </div>
+                        <!-- /.explanations__card-heading -->
+                
+                        <div class="explanations__card-text-wrap">
+                            <p class="explanations__card-text main-text">
+                                Ниже на фотографии изображен код сайта компании Porsche, на котором видны файлы Astro JS. Мы предполагаем, что в этой компании работают лучшие IT-специалисты, и они сделали правильный выбор.
+                            </p>
+                        </div>
+                
+                        <img src="./img/corporate-approach.png" alt="" class="explanations__card-img">
+                    </div>  
+                    <!-- /.explanations__card -->
+                     
+                </div>
+                <!-- /.explanations__cards -->
+
             </div>
-            <!-- /.questions__cards -->
+            <!-- /.container -->
 
         </section>
-        <!-- /.corporate-speed -->
+        <!-- /.explanations -->
 
     <section class="technologies section container">
 
@@ -1161,14 +1265,18 @@
                     <div class="work__cards work__cards_heading">
                         
                         <div class="work__card">
-                            <div class="work__card-icone"></div>
+                            <div class="work__card-icon-wrap">
+                                <img src="./img/corporate-work-icon-01.svg" alt="" class="work__card-icon">
+                            </div>
                             <p class="work__card-text main-text">Анализ прямых конкурентов и их страниц</p>
                         </div>
                         <!-- /.work__card -->
         
                         <div class="work__card">
-                            <div class="work__card-icone"></div>
-                            <p class="work__card-text main-text">Анализ прямых конкурентов и их страниц</p>
+                            <div class="work__card-icon-wrap">
+                                <img src="./img/corporate-work-icon-02.svg" alt="" class="work__card-icon">
+                            </div>
+                            <p class="work__card-text main-text">Качественный сценарий и текст лендинга*</p>
                         </div>
                         <!-- /.work__card -->
         
@@ -1181,36 +1289,48 @@
                 <div class="work__cards work__cards_main">
 
                     <div class="work__card">
-                        <div class="work__card-icone"></div>
-                        <p class="work__card-text main-text">Анализ прямых конкурентов и их страниц</p>
+                        <div class="work__card-icon-wrap">
+                            <img src="./img/corporate-work-icon-03.svg" alt="" class="work__card-icon">
+                        </div>
+                        <p class="work__card-text main-text">Индивидуальный дизайн посадочной страницы</p>
                     </div>
                     <!-- /.work__card -->
     
                     <div class="work__card">
-                        <div class="work__card-icone"></div>
-                        <p class="work__card-text main-text">Анализ прямых конкурентов и их страниц</p>
+                        <div class="work__card-icon-wrap">
+                            <img src="./img/corporate-work-icon-04.svg" alt="" class="work__card-icon">
+                        </div>
+                        <p class="work__card-text main-text">Настроенные счетчики рекламных систем, с целями и событиями</p>
                     </div>
                     <!-- /.work__card -->
                     <div class="work__card">
-                        <div class="work__card-icone"></div>
-                        <p class="work__card-text main-text">Анализ прямых конкурентов и их страниц</p>
-                    </div>
-                    <!-- /.work__card -->
-    
-                    <div class="work__card">
-                        <div class="work__card-icone"></div>
-                        <p class="work__card-text main-text">Анализ прямых конкурентов и их страниц</p>
-                    </div>
-                    <!-- /.work__card -->
-                    <div class="work__card">
-                        <div class="work__card-icone"></div>
-                        <p class="work__card-text main-text">Анализ прямых конкурентов и их страниц</p>
+                        <div class="work__card-icon-wrap">
+                            <img src="./img/corporate-work-icon-05.svg" alt="" class="work__card-icon">
+                        </div>
+                        <p class="work__card-text main-text">Качественный сценарий и текст лендинга*</p>
                     </div>
                     <!-- /.work__card -->
     
                     <div class="work__card">
-                        <div class="work__card-icone"></div>
+                        <div class="work__card-icon-wrap">
+                            <img src="./img/corporate-work-icon-06.svg" alt="" class="work__card-icon">
+                        </div>
                         <p class="work__card-text main-text">Анализ прямых конкурентов и их страниц</p>
+                    </div>
+                    <!-- /.work__card -->
+                    <div class="work__card">
+                        <div class="work__card-icon-wrap">
+                            <img src="./img/corporate-work-icon-03.svg" alt="" class="work__card-icon">
+                        </div>
+                        <p class="work__card-text main-text">Индивидуальный дизайн посадочной страницы</p>
+                    </div>
+                    <!-- /.work__card -->
+    
+                    <div class="work__card">
+                        <div class="work__card-icon-wrap">
+                            <img src="./img/corporate-work-icon-04.svg" alt="" class="work__card-icon">
+                        </div>
+                        <p class="work__card-text main-text">Настроенные счетчики рекламных систем, с целями и событиями</p>
                     </div>
                     <!-- /.work__card -->
     
